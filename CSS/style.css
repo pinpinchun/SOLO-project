@@ -1,0 +1,1655 @@
+<<<<<<< HEAD
+@import url('reset.css');
+
+*{
+    text-decoration: none;
+    color: #333;
+}
+
+/*--------------- header 區塊 ---------------*/
+
+.header{
+    max-width: 1440px;
+    display: flex;
+    margin: 28px auto;
+}
+
+/* header logo */
+
+.logo{
+    margin-right: 56px;
+    padding-left: 36px;
+}
+
+/* header 搜尋列 */
+
+.main_search{
+    width: 316px;
+    margin-right: 56px;
+    background-color: #ECECEC;
+    border-radius: 32px;
+}
+
+.main_search a{
+    position: relative;
+}
+
+.main_search img{
+    position: absolute;
+    right: 0;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+}
+
+.main_search input{
+    margin-left: 68px;
+    font-size: 20px;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    line-height: 60px;
+    width: 210px;
+}
+
+/* header 主選單 */
+
+.main_nav{
+    display: flex;
+    width: 568px;
+    height: 60px;
+    background-color: #F1F6F5;
+    border-radius: 32px;
+    padding-left: 24px;
+}
+
+.main_nav>li{
+    flex-grow: 1;
+}
+
+.main_nav>li>a{
+    color: #84B2CD;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.expend_nav>a:after{
+    padding-left: 8px;
+    content: url('../img/Header/展開.svg');
+    vertical-align: middle;
+}
+
+.main_nav>li:last-child a{
+    background-color: #84B2CD;
+    color: #FFFFFF;
+    display: block;
+    width: 132px;
+    height: 40px;
+    border-radius: 49.93px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 40px;
+}
+
+.expend_nav>a{
+    margin-bottom: 4px;
+    position: relative;
+}
+
+/* header 子選單 */
+
+.sub_nav{
+    background-color: #F1F6F5;
+    border-radius: 9px;
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.sub_nav li{
+    height: 55px;
+}
+
+.sub_nav a{
+    display: block;
+    color: #84B2CD;
+    font-size: 20px;
+}
+
+.sub_nav li:first-child a{
+    padding: 20px 20px 15px;
+    /* border-bottom: 1px dashed #84B2CD; */
+}
+
+.sub_nav li:last-child a{
+    padding: 16px 20px 20px;
+}
+
+.expend_nav:hover ol{
+    display: block;
+    /* position: fixed; */
+}
+
+.main_nav a:hover{
+    font-weight: bold;
+}
+
+
+
+/* header 收藏與評論功能 */
+
+.header .keep{
+    margin:0 12px;
+    width: 60px;
+    background-color: #F1F6F5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header .keep img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header .comment_icon{
+    width: 60px;
+    background-color: #F1F6F5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header .comment_icon img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/*--------------- footer 區塊 ---------------*/
+
+.footer{
+    max-width: 1440px;
+    display: flex;
+    margin: 16px auto;
+}
+
+.footer_logo{
+    margin-right: 271px;
+    padding-left: 28px;
+}
+
+.footer p{
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.contact{
+    margin-left: 304px;
+    display: flex;
+    align-content:center    
+}
+
+.contact img{
+    float: left;
+    width: 28px;
+    padding-right: 12px;
+}
+
+.contact p{
+    float: right;
+    font-size: 20px;
+    color: #666;
+}
+
+
+
+/*--------------- About 頁面 ---------------*/
+.about{
+    margin-top: 32px;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.aboutTitle{
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 11px;
+    display: flex;
+}
+
+.about h1{
+    font-size: 200px;
+    margin-left: 52px;
+    color: #E0F1F2;
+}
+
+.about h2{
+    font-size: 128px;
+    margin-left: 72px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    color: #E0F1F2;
+}
+
+.aboutHULU{
+    margin-top: -32px;
+    background-color:#E0F1F2;
+    background-image: url('../img/About/About\ 背景.png');
+    width: 1440px;
+    height: 808px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.aboutHULU p{
+    padding: 444px 0 28px 1020px;
+    font-size: 14px;
+}
+
+.aboutHULU h3{
+    color: #84B2CD;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 1020px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutHULU h3:last-child{
+    line-height: 2.5;
+}
+
+.aboutHULU h3:last-child::before{
+    content: '';
+    padding-left: 48px;
+}
+
+.about .conceptTitle{
+    color: #F1F6F5;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 11px;
+    text-align: right;
+    margin-top: 60px;
+}
+
+.concept{
+    background-color:#F1F6F5;
+    margin-top: -36px;
+    width: 1440px;
+    height: 628px;
+    align-content: center;
+}
+
+.concept ul{
+    display: flex;
+    justify-content: center;
+}
+
+.concept li{
+    flex-grow: 1;
+    width: 420px;
+    height: 420px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.concept li:nth-child(1){
+    background-image: url('../img/About/古畫-1.png');
+    margin-left: 42px;
+}
+
+.concept li:nth-child(2){
+    background-image: url('../img/About/古畫-2.png');
+}
+
+.concept li:nth-child(3){
+    background-image: url('../img/About/古畫-3.png');
+}
+
+.conceptHover{
+    background-color: rgba(51, 51, 51, .9);
+    width: 420px;
+    height: 420px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.conceptHover p{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+    align-self: center;
+}
+
+.conceptHover:hover{
+    opacity: 1;
+}
+
+
+/*--------------- 會員主頁_足跡 頁面 ---------------*/
+
+.member{
+    background-color: #E1E1CD;
+}
+
+/* member porfile */
+.member_profile{
+    max-width: 1440px;
+    margin: 0 auto 48px auto;
+    display: flex;
+}
+
+.member_profile img{
+    width: 152px;
+    padding: 32px 0 0 76px;
+}
+
+.member_profile ul{
+    margin-left: 52px;
+    align-self: center;
+}
+
+.member_profile li:first-child{
+    display: flex;
+    padding: 28px 0;
+}
+
+.member_profile h1{
+    padding-right: 24px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.member_profile h3{
+    padding: 4px 10px;
+    align-self: end;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.member_profile p{
+    font-size: 20px;
+}
+
+.member_profile span{
+    font-size: 32px;
+    padding: 0 24px;
+    color: #999;
+}
+
+.member_profile span:nth-child(odd){
+    color: #84B2CD;
+    padding: 0 12px;
+}
+
+
+/* member nav */
+
+.member_nav{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.member_btn{
+    display: flex;
+    margin: 0;
+}
+
+.member_btn li{
+    flex-grow: 1;
+    margin: 0 68px;
+}
+
+.member_btn a{
+    display: flex;
+}
+
+.member_btn h2{
+    align-content: end;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-right: 32px;
+}
+
+.member_btn img{
+    width: 88px;
+}
+
+.member_btn .clicked h2{
+    font-size: 32px;
+    font-weight: bold;
+    align-content: end;
+    color: #A59683;
+    padding-right: 20px;
+}
+
+.member_btn .clicked img{
+    transform: rotate(330deg);
+}
+
+.member > img{
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -1px;
+}
+
+/* member footprints */
+
+.footprints{
+    max-width: 1440px;
+    margin: 100px auto 0;
+    background-image: url('../img/會員主頁/足跡線.png');
+    background-size: 72%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.footprints ul{
+    margin: 0 88px;
+    padding-top: 14px;
+}
+
+.footprints li{
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.footprints li:nth-child(even){
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+.footprints img{
+    width: 296px;
+}
+
+.footprints p{
+    align-self: center;
+    font-size: 28px;
+    color: #61422E;
+    padding: 0 72px;
+    line-height: 2;
+}
+
+.footprints h4{
+    position: absolute;
+    left: 100px;
+    bottom: 112px;
+    color: #666;
+    font-size: 36px;
+}
+
+
+
+/*--------------- 會員主頁_評論紀錄 頁面 ---------------*/
+
+.comment_history{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.comment_history p{
+    padding-top: 10%;
+    padding-bottom: 30%;
+    text-align: center;
+    color: #666;
+    font-size: 36px;
+}
+
+
+/*--------------- 會員主頁_收藏店鋪 頁面 ---------------*/
+
+.keep_records{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.keep_records p{
+    padding-top: 10%;
+    padding-bottom: 30%;
+    text-align: center;
+    color: #666;
+    font-size: 36px;
+}
+
+
+
+
+/*--------------- 登入註冊頁 ---------------*/
+
+.Sign_bg{
+    background-color: #84B2CD;
+}
+
+.Sign{
+    background-image: url('../img/Sign/Sign\ up\ &\ Sign\ in.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    filter: drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.Sign a{
+    font-size: 68px;
+    /* font-size: 4.3rem; */
+    /* font-size: 4.3vw; */
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    padding: 25px 25px 16px;
+    display: inline-block;
+}
+
+.Sign a:first-child{
+    top: 242px;
+    left: 73px;
+    transform: skew(0deg, 18deg);
+    background-color: #B4B8E4;
+}
+
+.Sign a:last-child{
+    top: 242px;
+    right: 73px;
+    transform: skew(0deg, -16deg);
+    background-color: #FFC0C0;
+}
+
+
+
+/*--------------- 登入頁 ---------------*/
+
+
+.SignIn_bg{
+    background-image: url('../img/Sign/Sign\ in.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter: drop-shadow(12px 12px 4px rgba(0, 0, 0, 25%));
+    position: relative;
+}
+
+.SignIn{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}
+
+
+.SignIn h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 20px 60px;
+    background-color: #B4B8E4;
+    width: 120px;
+    margin: 0 auto 48px;
+}
+
+.SignIn a{
+    border: transparent;
+    background-color: transparent;
+    color: #666;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 34px;
+    margin: 0 auto;
+}
+
+.SignIn a:nth-of-type(1){
+    padding: 8px 60px 8px 32px;
+    margin-bottom: 44px;
+}
+
+.SignIn a:nth-of-type(2){
+    padding: 8px 32px 8px 32px;
+}
+
+.SignIn a>img{
+    width: 52px;
+    padding-right: 40px;
+}
+
+.signup{
+    position: absolute;
+    top: 262px;
+    right: 41px;
+}
+
+.signup h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    transform: skew(0deg, -38deg);
+    display: inline-block;
+}
+
+.signup img{
+    width: 77px;
+    padding-left: 8px;
+    transform: skew(0deg, -3deg);
+}
+
+
+
+/*--------------- 註冊頁 ---------------*/
+
+.signUp_bg{
+    background-image: url('../img/Sign/Sign\ up.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter:drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.signin{
+    position: absolute;
+    top: 249px;
+    left: 49px;
+}
+
+.signin h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    transform: skew(0deg, 33deg);
+    display: inline-block;
+}
+
+.signin img{
+    width: 77px;
+    transform: skew(0deg, 3deg);
+}
+
+.SignUp{
+    position: absolute;
+    top: 136px;
+    left: 204px;
+}
+
+.SignUp h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 20px 60px;
+    background-color: #FFC0C0;
+    width: 120px;
+    margin: 0 auto 48px;
+    /* margin-bottom: 48px; */
+}
+
+.SignUp a{
+    border: transparent;
+    background-color: transparent;
+    color: #666;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 34px;
+    margin: 0 auto;
+}
+
+.SignUp a:nth-of-type(1){
+    padding: 8px 60px 8px 32px;
+    margin-bottom: 44px;
+}
+
+.SignUp a:nth-of-type(2){
+    padding: 8px 32px 8px 32px;
+}
+
+.SignUp a>img{
+    width: 52px;
+    padding-right: 40px;
+}
+
+
+
+
+
+/*--------------- 加入會員 ---------------*/
+
+.Join_bg{
+    background-image: url('../img/Sign/Join\ member.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter:drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 208px;
+}
+
+.join h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 20px 28px;
+    background-color: #FFC0C0;
+    width: 279px;
+    margin-bottom: 44px;
+}
+
+.join h2{
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.join input{
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    padding: 12px 76px 12px 18px;
+    background-color: #fff;
+    border-radius: 34px;
+    border: 1px solid #333;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.join_btn{
+    display: flex;
+    align-items: center;
+}
+
+.join_btn button{
+    border: transparent;
+    background-color: transparent;
+}
+
+.join_btn a{
+    color: #fff;
+    border-radius: 40px;
+}
+
+.join_btn button:first-child a{
+    font-size: 24px;
+    padding: 12px 24px;
+    background-color: #d9d9d9;
+    margin-right: 8px;
+}
+
+.join_btn button:last-child a{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 12px 56px;
+    background-color: #B4B8E4;
+}
+
+
+=======
+@import url('reset.css');
+
+*{
+    text-decoration: none;
+    color: #333;
+}
+
+/*--------------- header 區塊 ---------------*/
+
+.header{
+    max-width: 1440px;
+    display: flex;
+    margin: 28px auto;
+}
+
+/* header logo */
+
+.logo{
+    margin-right: 56px;
+    padding-left: 36px;
+}
+
+/* header 搜尋列 */
+
+.main_search{
+    width: 316px;
+    margin-right: 56px;
+    background-color: #ECECEC;
+    border-radius: 32px;
+}
+
+.main_search a{
+    position: relative;
+}
+
+.main_search img{
+    position: absolute;
+    right: 0;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 28px;
+}
+
+.main_search input{
+    margin-left: 68px;
+    font-size: 20px;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    line-height: 60px;
+    width: 210px;
+}
+
+/* header 主選單 */
+
+.main_nav{
+    display: flex;
+    width: 568px;
+    height: 60px;
+    background-color: #F1F6F5;
+    border-radius: 32px;
+    padding-left: 24px;
+}
+
+.main_nav>li{
+    flex-grow: 1;
+}
+
+.main_nav>li>a{
+    color: #84B2CD;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.expend_nav>a:after{
+    padding-left: 8px;
+    content: url('../img/Header/展開.svg');
+    vertical-align: middle;
+}
+
+.main_nav>li:last-child a{
+    background-color: #84B2CD;
+    color: #FFFFFF;
+    display: block;
+    width: 132px;
+    height: 40px;
+    border-radius: 49.93px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 40px;
+}
+
+.expend_nav>a{
+    margin-bottom: 4px;
+    position: relative;
+}
+
+/* header 子選單 */
+
+.sub_nav{
+    background-color: #F1F6F5;
+    border-radius: 9px;
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.sub_nav li{
+    height: 55px;
+}
+
+.sub_nav a{
+    display: block;
+    color: #84B2CD;
+    font-size: 20px;
+}
+
+.sub_nav li:first-child a{
+    padding: 20px 20px 15px;
+    /* border-bottom: 1px dashed #84B2CD; */
+}
+
+.sub_nav li:last-child a{
+    padding: 16px 20px 20px;
+}
+
+.expend_nav:hover ol{
+    display: block;
+    /* position: fixed; */
+}
+
+.main_nav a:hover{
+    font-weight: bold;
+}
+
+
+
+/* header 收藏與評論功能 */
+
+.header .keep{
+    margin:0 12px;
+    width: 60px;
+    background-color: #F1F6F5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header .keep img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.header .comment_icon{
+    width: 60px;
+    background-color: #F1F6F5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.header .comment_icon img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/*--------------- footer 區塊 ---------------*/
+
+.footer{
+    max-width: 1440px;
+    display: flex;
+    margin: 16px auto;
+}
+
+.footer_logo{
+    margin-right: 271px;
+    padding-left: 28px;
+}
+
+.footer p{
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.contact{
+    margin-left: 304px;
+    display: flex;
+    align-content:center    
+}
+
+.contact img{
+    float: left;
+    width: 28px;
+    padding-right: 12px;
+}
+
+.contact p{
+    float: right;
+    font-size: 20px;
+    color: #666;
+}
+
+
+
+/*--------------- About 頁面 ---------------*/
+.about{
+    margin-top: 32px;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.aboutTitle{
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 11px;
+    display: flex;
+}
+
+.about h1{
+    font-size: 200px;
+    margin-left: 52px;
+    color: #E0F1F2;
+}
+
+.about h2{
+    font-size: 128px;
+    margin-left: 72px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    color: #E0F1F2;
+}
+
+.aboutHULU{
+    margin-top: -32px;
+    background-color:#E0F1F2;
+    background-image: url('../img/About/About\ 背景.png');
+    width: 1440px;
+    height: 808px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.aboutHULU p{
+    padding: 444px 0 28px 1020px;
+    font-size: 14px;
+}
+
+.aboutHULU h3{
+    color: #84B2CD;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 1020px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutHULU h3:last-child{
+    line-height: 2.5;
+}
+
+.aboutHULU h3:last-child::before{
+    content: '';
+    padding-left: 48px;
+}
+
+.about .conceptTitle{
+    color: #F1F6F5;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 11px;
+    text-align: right;
+    margin-top: 60px;
+}
+
+.concept{
+    background-color:#F1F6F5;
+    margin-top: -36px;
+    width: 1440px;
+    height: 628px;
+    align-content: center;
+}
+
+.concept ul{
+    display: flex;
+    justify-content: center;
+}
+
+.concept li{
+    flex-grow: 1;
+    width: 420px;
+    height: 420px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.concept li:nth-child(1){
+    background-image: url('../img/About/古畫-1.png');
+    margin-left: 42px;
+}
+
+.concept li:nth-child(2){
+    background-image: url('../img/About/古畫-2.png');
+}
+
+.concept li:nth-child(3){
+    background-image: url('../img/About/古畫-3.png');
+}
+
+.conceptHover{
+    background-color: rgba(51, 51, 51, .9);
+    width: 420px;
+    height: 420px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.conceptHover p{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+    align-self: center;
+}
+
+.conceptHover:hover{
+    opacity: 1;
+}
+
+
+/*--------------- 會員主頁_足跡 頁面 ---------------*/
+
+.member{
+    background-color: #E1E1CD;
+}
+
+/* member porfile */
+.member_profile{
+    max-width: 1440px;
+    margin: 0 auto 48px auto;
+    display: flex;
+}
+
+.member_profile img{
+    width: 152px;
+    padding: 32px 0 0 76px;
+}
+
+.member_profile ul{
+    margin-left: 52px;
+    align-self: center;
+}
+
+.member_profile li:first-child{
+    display: flex;
+    padding: 28px 0;
+}
+
+.member_profile h1{
+    padding-right: 24px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.member_profile h3{
+    padding: 4px 10px;
+    align-self: end;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.member_profile p{
+    font-size: 20px;
+}
+
+.member_profile span{
+    font-size: 32px;
+    padding: 0 24px;
+    color: #999;
+}
+
+.member_profile span:nth-child(odd){
+    color: #84B2CD;
+    padding: 0 12px;
+}
+
+
+/* member nav */
+
+.member_nav{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.member_btn{
+    display: flex;
+    margin: 0;
+}
+
+.member_btn li{
+    flex-grow: 1;
+    margin: 0 68px;
+}
+
+.member_btn a{
+    display: flex;
+}
+
+.member_btn h2{
+    align-content: end;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-right: 32px;
+}
+
+.member_btn img{
+    width: 88px;
+}
+
+.member_btn .clicked h2{
+    font-size: 32px;
+    font-weight: bold;
+    align-content: end;
+    color: #A59683;
+    padding-right: 20px;
+}
+
+.member_btn .clicked img{
+    transform: rotate(330deg);
+}
+
+.member > img{
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+    margin-top: -1px;
+}
+
+/* member footprints */
+
+.footprints{
+    max-width: 1440px;
+    margin: 100px auto 0;
+    background-image: url('../img/會員主頁/足跡線.png');
+    background-size: 72%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.footprints ul{
+    margin: 0 88px;
+    padding-top: 14px;
+}
+
+.footprints li{
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.footprints li:nth-child(even){
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+.footprints img{
+    width: 296px;
+}
+
+.footprints p{
+    align-self: center;
+    font-size: 28px;
+    color: #61422E;
+    padding: 0 72px;
+    line-height: 2;
+}
+
+.footprints h4{
+    position: absolute;
+    left: 100px;
+    bottom: 112px;
+    color: #666;
+    font-size: 36px;
+}
+
+
+
+/*--------------- 會員主頁_評論紀錄 頁面 ---------------*/
+
+.comment_history{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.comment_history p{
+    padding-top: 10%;
+    padding-bottom: 30%;
+    text-align: center;
+    color: #666;
+    font-size: 36px;
+}
+
+
+/*--------------- 會員主頁_收藏店鋪 頁面 ---------------*/
+
+.keep_records{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.keep_records p{
+    padding-top: 10%;
+    padding-bottom: 30%;
+    text-align: center;
+    color: #666;
+    font-size: 36px;
+}
+
+
+
+
+/*--------------- 登入註冊頁 ---------------*/
+
+.Sign_bg{
+    background-color: #84B2CD;
+}
+
+.Sign{
+    background-image: url('../img/Sign/Sign\ up\ &\ Sign\ in.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    filter: drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.Sign a{
+    font-size: 68px;
+    /* font-size: 4.3rem; */
+    /* font-size: 4.3vw; */
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    padding: 25px 25px 16px;
+    display: inline-block;
+}
+
+.Sign a:first-child{
+    top: 242px;
+    left: 73px;
+    transform: skew(0deg, 18deg);
+    background-color: #B4B8E4;
+}
+
+.Sign a:last-child{
+    top: 242px;
+    right: 73px;
+    transform: skew(0deg, -16deg);
+    background-color: #FFC0C0;
+}
+
+
+
+/*--------------- 登入頁 ---------------*/
+
+
+.SignIn_bg{
+    background-image: url('../img/Sign/Sign\ in.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter: drop-shadow(12px 12px 4px rgba(0, 0, 0, 25%));
+    position: relative;
+}
+
+.SignIn{
+    position: absolute;
+    top: 120px;
+    left: 60px;
+}
+
+
+.SignIn h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 20px 60px;
+    background-color: #B4B8E4;
+    width: 120px;
+    margin: 0 auto 48px;
+}
+
+.SignIn a{
+    border: transparent;
+    background-color: transparent;
+    color: #666;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 34px;
+    margin: 0 auto;
+}
+
+.SignIn a:nth-of-type(1){
+    padding: 8px 60px 8px 32px;
+    margin-bottom: 44px;
+}
+
+.SignIn a:nth-of-type(2){
+    padding: 8px 32px 8px 32px;
+}
+
+.SignIn a>img{
+    width: 52px;
+    padding-right: 40px;
+}
+
+.signup{
+    position: absolute;
+    top: 262px;
+    right: 41px;
+}
+
+.signup h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    transform: skew(0deg, -38deg);
+    display: inline-block;
+}
+
+.signup img{
+    width: 77px;
+    padding-left: 8px;
+    transform: skew(0deg, -3deg);
+}
+
+
+
+/*--------------- 註冊頁 ---------------*/
+
+.signUp_bg{
+    background-image: url('../img/Sign/Sign\ up.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter:drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.signin{
+    position: absolute;
+    top: 249px;
+    left: 49px;
+}
+
+.signin h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    transform: skew(0deg, 33deg);
+    display: inline-block;
+}
+
+.signin img{
+    width: 77px;
+    transform: skew(0deg, 3deg);
+}
+
+.SignUp{
+    position: absolute;
+    top: 136px;
+    left: 204px;
+}
+
+.SignUp h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 20px 60px;
+    background-color: #FFC0C0;
+    width: 120px;
+    margin: 0 auto 48px;
+    /* margin-bottom: 48px; */
+}
+
+.SignUp a{
+    border: transparent;
+    background-color: transparent;
+    color: #666;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 34px;
+    margin: 0 auto;
+}
+
+.SignUp a:nth-of-type(1){
+    padding: 8px 60px 8px 32px;
+    margin-bottom: 44px;
+}
+
+.SignUp a:nth-of-type(2){
+    padding: 8px 32px 8px 32px;
+}
+
+.SignUp a>img{
+    width: 52px;
+    padding-right: 40px;
+}
+
+
+
+
+
+/*--------------- 加入會員 ---------------*/
+
+.Join_bg{
+    background-image: url('../img/Sign/Join\ member.png');
+    max-width: 648px;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    filter:drop-shadow(12px -12px 4px rgba(0, 0, 0, 25%));
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 208px;
+}
+
+.join h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 20px 28px;
+    background-color: #FFC0C0;
+    width: 279px;
+    margin-bottom: 44px;
+}
+
+.join h2{
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.join input{
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    padding: 12px 76px 12px 18px;
+    background-color: #fff;
+    border-radius: 34px;
+    border: 1px solid #333;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.join_btn{
+    display: flex;
+    align-items: center;
+}
+
+.join_btn button{
+    border: transparent;
+    background-color: transparent;
+}
+
+.join_btn a{
+    color: #fff;
+    border-radius: 40px;
+}
+
+.join_btn button:first-child a{
+    font-size: 24px;
+    padding: 12px 24px;
+    background-color: #d9d9d9;
+    margin-right: 8px;
+}
+
+.join_btn button:last-child a{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 12px 56px;
+    background-color: #B4B8E4;
+}
+
+
+>>>>>>> 9628304a0cb4d332820c3d9daa58441edc69df6b
