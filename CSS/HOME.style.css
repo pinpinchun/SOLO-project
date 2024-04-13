@@ -637,8 +637,8 @@
 }
 
 .category h3{
-    /* font-size: 1.25vw; */
-    font-size: 20px;
+    font-size: 1.25vw;
+    /* font-size: 20px; */
     color: #686B4C;
     font-weight: bold;
 }
