@@ -93,7 +93,7 @@
 }
 
 .expend_nav>a{
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     position: relative;
 }
 
@@ -732,7 +732,7 @@
     justify-content: center;
 }
 
-.comment_filter li:not(li:last-child){
+.comment_filter>li:not(li:last-child){
     margin-right: 24px;
 }
 
@@ -751,19 +751,14 @@
     color: #fff;
 }
 
-.filter_time button{
-    padding: 16px 52px;
-}
 
-.filter_star{
-    display: flex;
-    align-content: center;
-}
+/* 星等 */
 
-.filter_star button{
+.filter_star>button{
     display: flex;
     align-items: center;
-    padding: 11px 43px;
+    padding: 16px 43px;
+    /* position: relative; */
 }
 
 .filter_star img:first-child{
@@ -776,7 +771,52 @@
     width: 24px;
 }
 
-.filter_item button{
+.sub_filter_star{
+    /* width: 200px; */
+    /* height: 110px; */
+    position: absolute;
+    display: none;
+    margin-top: 4px;
+}
+
+.filter_star:hover ol{
+    display: block;
+    /* position: fixed; */
+}
+
+
+.sub_filter_star button{
+    border-radius: 0;
+    padding: 16px 58px;
+}
+
+.sub_filter_star li:first-child button{
+    border-radius: 8px 8px 0 0;
+}
+
+.sub_filter_star li:last-child button{
+    border-radius: 0 0 8px 8px;
+}
+
+.sub_filter_star img{
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.filter_time button{
+    padding: 16px 52px;
+}
+
+.filter_photo button{
+    padding: 16px 52px;
+}
+
+
+/* 評論項目 */
+
+/* .filter_item button{
     display: flex;
     align-items: center;
     padding: 16px 36px;
@@ -785,7 +825,7 @@
 .filter_item img{
     width: 24px;
     margin-left: 8px;
-}
+} */
 
 
 /* 評論 */
