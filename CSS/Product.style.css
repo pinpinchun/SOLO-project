@@ -229,6 +229,7 @@
     margin: 0 auto;
     background: linear-gradient(0deg, #F0F0E6 94%, #f0f0e600 94%);
     padding-bottom: 116px;
+    position: relative;
 }
 
 .product_title{
@@ -240,6 +241,8 @@
     margin: 0 auto;
     text-align: center;
     filter:drop-shadow(4px 4px 4px rgba(95, 56, 39, 25%));
+    position: relative;
+    z-index: 2;
 }
 
 .product_title h1{
@@ -603,7 +606,7 @@
 .overview h1{
     color: #fff;
     font-size: 36px;
-    align-self: center;
+    align-self: flex-end;
     margin-right: 20px;
 }
 
@@ -708,9 +711,6 @@
 .item_star img{
     height: 28px;
 }
-
-
-
 
 
 
@@ -836,7 +836,7 @@
 }
 
 .comment_content img{
-    height: 30px;
+    height: 24px;
 }
 
 .comment_content h2{
@@ -900,4 +900,229 @@
     color: #fff;
     display: block;
     margin: 9% auto 0 auto;
+}
+
+
+
+
+/*--------------- 撰寫評論 ---------------*/
+
+.window_comment{
+    background-color: rgba(51, 51, 51, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    display: none;
+}
+
+.write_comment{
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 13px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    border: 3px solid #A59683;
+    
+    display: none;
+}
+
+.main_comment{
+    display: flex;
+}
+
+
+/* 評論區左半部 */
+
+.left_comment{
+    margin-top: 36px;
+    margin-left: 68px;
+}
+
+.overview_comment{
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px dashed #333;
+}
+
+.overview_comment_star{
+    display: flex;
+    align-items: center;
+}
+
+.overview_comment_star h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 36px;
+}
+
+.overview_comment_star ul{
+    display: flex;
+}
+
+.overview_comment_star li{
+    margin-right: 8px;
+}
+
+.left_comment li>img{
+    width: 36px;
+}
+
+.overview_comment h2{
+    margin-top: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.item_comment{
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px dashed #333;
+}
+
+.item_comment h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.item_comment ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item_comment ul>li:not(li:last-child){
+    margin-bottom: 8px;
+}
+
+.item_comment ol{
+    display: flex;
+    align-items: center;
+}
+
+.item_comment ol>li{
+    margin-right: 8px;
+}
+
+.experience_date{
+    display: flex;
+    align-items: center;
+}
+
+.experience_date h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 36px;
+}
+
+.experience_date input{
+    border-radius: 5px;
+    border: 1px solid #666666;
+    padding: 0 8px;
+    font-size: 16px;
+}
+
+
+/* 評論區右半部 */
+.right_comment{
+    margin-left: 68px;
+    margin-top: 36px;
+}
+
+.exp_review{
+    margin-bottom: 40px;
+}
+
+.exp_review h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;    
+}
+
+.exp_review textarea{
+    font-size: 16px;
+    border: 1px solid #666;
+    border-radius: 9px;
+    width: 432px;
+    height: 188px;
+    padding: 12px;
+}
+
+.share_photo h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.share_photo>h1 span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #999999;
+    margin-left: 16px;
+}
+
+.share_photo ul{
+    display: flex;
+    margin-top: 12px;
+}
+
+.share_photo li{
+    background-color: #D9D9D9;
+    border-radius: 9px;
+    width: 124px;
+    height: 124px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.share_photo input[type="file"]{
+    display: none;
+}
+
+.share_photo img{
+    width: 12px;
+    padding: 56px;
+}
+
+
+/* Esc */
+.main_comment>img{
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.comment_btn{
+    margin: 40px 0 28px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.comment_btn button{
+    border: transparent;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 9px;
+    color: #fff;
+}
+
+.comment_btn button:first-child{
+    margin-right: 28px;
+    background-color: #D9D9D9;
+}
+
+.comment_btn button:last-child{
+    background-color: #84B2CD;
 }
