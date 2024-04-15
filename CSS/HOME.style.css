@@ -70,9 +70,25 @@
 }
 
 .main_nav>li>a{
-    color: #84B2CD;
+    /* color: #84B2CD;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 60px; */
+    --height: 60px;
+    --progress: 0px;
+    color: transparent;
+    display: block;
+    font-size: 20px;
+    line-height: var(--height);
+    overflow: hidden;
+    text-shadow: 0 calc(var(--progress) * -1) #84B2CD,
+      0 calc(var(--height) - var(--progress)) #84B2CD;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.main_nav a:not(li:last-child a):hover{
+    font-weight: bold;
+    --progress: var(--height);
 }
 
 .expend_nav>a:after{
@@ -91,6 +107,10 @@
     text-align: center;
     margin: 10px 0;
     line-height: 40px;
+}
+
+.main_nav>li:last-child:hover a{
+    font-weight: bold;
 }
 
 .expend_nav{
@@ -120,6 +140,10 @@
     font-size: 20px;
 }
 
+.sub_nav a:hover{
+    font-weight: bold;
+}
+
 .sub_nav li:first-child a{
     padding: 20px 20px 15px;
 }
@@ -130,10 +154,6 @@
 
 .expend_nav:hover ol{
     display: block;
-}
-
-.main_nav a:hover{
-    font-weight: bold;
 }
 
 /* header 收藏與評論功能 */
@@ -236,13 +256,35 @@
 
 .map_nav>img:not(img:first-child){
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .map_nav>img:nth-child(2){
     width: 110px;
     top: 203px;
     left: 116px;
+    animation: cloud_left 130s linear infinite;
+}
+
+@keyframes cloud_left{
+    0%{
+        left: 3%;
+        opacity: 0;
+    }
+
+    5%{
+        left: 7%;
+        opacity: 1;
+    }
+
+    95%{
+        opacity: 1;
+    }
+
+    100%{
+        left: 95%;
+        opacity: 0;
+    }
 }
 
 .map_nav>img:nth-child(3){
@@ -255,24 +297,102 @@
     width: 155px;
     top: 577px;
     left: 100px;
+    animation: boat 80s ease-in-out infinite;
+}
+
+@keyframes boat{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    30%{
+        transform: translate(400px, -23px);
+    }
+
+    75%{
+        transform: translate(-200px, 30px);
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 .map_nav>img:nth-child(5){
     width: 103px;
     top: 668px;
     left: 386px;
+    animation: cloud_mid 80s linear infinite;
+}
+
+@keyframes cloud_mid{
+    0%{
+        left: 23%;
+        opacity: 0;
+    }
+
+    2%{
+        left: 24%;
+        opacity: 1;
+    }
+
+    93%{
+        opacity: 1;
+    }
+
+    100%{
+        left: 80%;
+        opacity: 0;
+    }
 }
 
 .map_nav>img:nth-child(6){
     width: 78px;
     top: 695px;
     left: 1125px;
+    animation: bird_right 10s linear infinite;
+}
+
+@keyframes bird_right{
+    0%{}
+
+    100%{}
 }
 
 .map_nav>img:nth-child(7){
     width: 158px;
     top: 291px;
     left: 1208px;
+    animation: cloud_right 60s linear infinite;
+    opacity: 0;
+}
+
+@keyframes cloud_right{
+    0%{
+        opacity: 0;
+    }
+
+    48%{
+        left: 60%;
+        opacity: 0;
+    }
+
+    50%{
+        left: 60.5%;
+        opacity: 1;
+    }
+
+    95%{
+        left: 88%;
+        opacity: 1;
+        /* display: none; */
+    }
+
+    100%{
+        left: 90%;
+        opacity: 0;
+        /* display: none; */
+    }
 }
 
 .map_nav>img:nth-child(8){
@@ -312,6 +432,7 @@
     font-size: 20px;
     position: absolute;
     color: #666;
+    transition: all .5s ease;
 }
 
 .cat_island a:first-child{
@@ -357,6 +478,7 @@
     line-height: 218.82px;
     top: 60px;
     left: 643px;
+    z-index: 1;
 }
 
 .cat_island a:nth-child(4) p{
@@ -382,7 +504,6 @@
 
 .cat_island a:hover{
     transform: translateY(-12px);
-    transition: all .5s ease;
     text-shadow: 0 0 0.5em #fff, 0 0 0.5em #fff, 0 0 0.5em #fff;
 }
 
@@ -503,11 +624,13 @@
     padding-left: 8px;
     align-content:space-around;
     font-size: 16px;
-    color: #84B2CD;
+    color: #FDCCCC;
+    font-weight: bold;
 }
 
 .top1_data span{
     color: #C4C4C4;
+    font-weight: normal;
 }
 
 .top1_star{

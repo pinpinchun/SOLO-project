@@ -70,9 +70,25 @@
 }
 
 .main_nav>li>a{
-    color: #84B2CD;
+    /* color: #84B2CD;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 60px; */
+    --height: 60px;
+    --progress: 0px;
+    color: transparent;
+    display: block;
+    font-size: 20px;
+    line-height: var(--height);
+    overflow: hidden;
+    text-shadow: 0 calc(var(--progress) * -1) #84B2CD,
+      0 calc(var(--height) - var(--progress)) #84B2CD;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+.main_nav a:not(li:last-child a):hover{
+    font-weight: bold;
+    --progress: var(--height);
 }
 
 .expend_nav>a:after{
@@ -93,8 +109,11 @@
     line-height: 40px;
 }
 
+.main_nav>li:last-child:hover a{
+    font-weight: bold;
+}
+
 .expend_nav>a{
-    margin-bottom: 4px;
     position: relative;
 }
 
@@ -120,9 +139,12 @@
     font-size: 20px;
 }
 
+.sub_nav a:hover{
+    font-weight: bold;
+}
+
 .sub_nav li:first-child a{
     padding: 20px 20px 15px;
-    /* border-bottom: 1px dashed #84B2CD; */
 }
 
 .sub_nav li:last-child a{
@@ -133,11 +155,6 @@
     display: block;
     /* position: fixed; */
 }
-
-.main_nav a:hover{
-    font-weight: bold;
-}
-
 
 
 /* header 收藏與評論功能 */
