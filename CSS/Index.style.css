@@ -6,18 +6,22 @@
 }
 
 /*--------------- 地圖選單 ---------------*/
+body{
+    background-color: #CBEEF6;
+}
 
 .map_nav{
     /* background-image: url('../img/HOME/map\ nav.png'); */
     /* background-repeat: no-repeat; */
     max-width: 1440px;
-    height: 782px;
+    /* height: 782px; */
+    height: 769px;
     background-size: contain;
     margin: 0 auto;
     padding-top: 20px;
     background-color: #CBEEF6;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .map_nav>img:first-child{
