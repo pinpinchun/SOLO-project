@@ -505,7 +505,7 @@ body{
 /* 全斷點 1150 */
 
 @media screen and (max-width: 1150px) {
-    
+
     .map_nav>img:first-child{
         max-width: 240px;
     }
@@ -774,6 +774,11 @@ body{
 /* 全斷點 430 */
 
 @media screen and (max-width: 430px){
+
+    .map_nav{
+        height: 726px;
+    }
+
     .map_nav>img:first-child{
         float: none;
         display: block;
@@ -787,6 +792,10 @@ body{
 
     .cat_island p:not(a:last-child p){
         opacity: 0;
+    }
+
+    .cat_island a:not(last-child){
+        pointer-events: none;
     }
 
     .cat_island a:first-child {
@@ -810,7 +819,7 @@ body{
     }
 
     .cat_island a:nth-child(5) {
-        top: 19%;
+        top: 20%;
         left: 14.6%;
     }
 
