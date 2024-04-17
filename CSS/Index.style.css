@@ -794,7 +794,7 @@ body{
         opacity: 0;
     }
 
-    .cat_island a:not(last-child){
+    .cat_island a:not(a:last-child){
         pointer-events: none;
     }
 
