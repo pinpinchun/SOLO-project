@@ -434,8 +434,8 @@ body{
     /* height: 529.23px; */
     height: 76%;
     background-image: url('../img/HOME/island\(main\).png');
-    /* font-size: 28px; */
-    font-size: 1.75vw;
+    font-size: 28px;
+    /* font-size: 1.75vw; */
     line-height: 2;
     /* top: 196px; */
     top: 28%;
@@ -462,6 +462,52 @@ body{
 
 
 /*--------------- 地圖選單RWD ---------------*/
+
+/* 全斷點 1920 */
+
+@media screen and (max-width: 1920px) {
+
+    .map_nav{
+        height: 930px;
+    }
+
+    .cat_island{
+        margin-top: 4%;
+    }
+
+    .cat_island a:first-child{
+        top: 40%;
+        left: 0;
+    }
+
+    .cat_island a:nth-child(5){
+        top: 25%;
+    }
+
+}
+
+/* 全斷點 1440 */
+
+@media screen and (max-width: 1920px) {
+
+    .map_nav{
+        height: 769px;
+    }
+
+    .cat_island{
+        margin-top: 0;
+    }
+
+    .cat_island a:first-child{
+        top: 46%;
+    }
+
+    .cat_island a:nth-child(5){
+        top: 28%;
+    }
+
+}
+
 
 
 /* 全斷點 1300 */
