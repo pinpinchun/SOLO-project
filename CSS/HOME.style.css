@@ -1766,6 +1766,11 @@
         width: 180px;
     }
 
+    .top1_data h4 {
+        font-size: 16px;
+        width: 140px;
+    }
+
     .top1_intro h3 {
         font-size: 16px;
         margin: 24px 0 0 12px;
