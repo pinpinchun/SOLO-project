@@ -1759,7 +1759,7 @@
     }
 
     .leisure_top1 li>img {
-        margin: -22px -330px;
+        margin: -22px -333px;
         /* margin: -22px -25px; */
         height: 44px;
     }
@@ -1817,6 +1817,12 @@
 
     .care_top1 a {
         width: 312px;
+    }
+
+    .care_top1 li>img {
+        margin: -22px -333px;
+        /* margin: -22px -25px; */
+        height: 44px;
     }
 
 
