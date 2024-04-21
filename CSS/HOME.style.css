@@ -1759,14 +1759,13 @@
     }
 
     .leisure_top1 li>img {
-        margin: -22px 60px;
+        margin: -22px -90px;
         /* margin: -22px -25px; */
         height: 44px;
     }
 
     .leisure_top1 a>img {
-        /* border-radius: 22px 0 0 22px; */
-        border-radius: 0;
+        border-radius: 22px 0 0 22px;
     }
 
     .leisure_top1 a {
