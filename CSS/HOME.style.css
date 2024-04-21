@@ -1744,9 +1744,9 @@
 }
 
 
-/* 全斷點 375 */
+/* 全斷點 400 */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
 
     /* 寵物休閒 HOT */
 
@@ -1840,7 +1840,7 @@
         top: 72%;
         left: 15%;
     }
-    
+
     .category a:nth-of-type(6) {
         width: 133px;
         height: 195px;
