@@ -268,7 +268,7 @@
 
 
 
-/*--------------- header RWD ---------------*/
+/*--------------- header & footer RWD ---------------*/
 
 
 /* 全斷點 1920 */
@@ -432,6 +432,7 @@
         margin-left: 3%;
         flex-grow: 0;
         width: 110px;
+        padding: 0;
     }
 
     .logo img{
@@ -545,6 +546,7 @@
         margin-left: 0;
         flex-grow: 0;
         width: 200px;
+        padding: 0;
     }
 
     .logo img{

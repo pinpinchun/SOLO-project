@@ -8,9 +8,10 @@
 /*--------------- 寵物休閒 HOT ---------------*/
 
 .leisure_hot{
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    width: 100%;
     margin: 0 auto;
-    background-image: linear-gradient(357deg, #E1E1CD 9% ,#84B2CD 9.1%);
+    background-image: linear-gradient(357deg, #E1E1CD 21%, #84B2CD 21.1%);
 }
 
 .leisure_hot h1{
@@ -40,6 +41,7 @@
     display: block;
     margin-left: auto;
     margin-right: 72px;
+    /* margin-right: 4%; */
 }
 
 .leisure_hot>a img{
@@ -71,8 +73,9 @@
 .leisure_top1 li>img{
     height: 49px;
     position: absolute;
-    top: -26px;
-    left: -27px;
+    /* top: -26px; */
+    /* left: -27px; */
+    margin: 0 -2px;
 }
 
 .leisure_top1 li:nth-child(3) img{
@@ -144,8 +147,9 @@
 /*--------------- 寵物照護 HOT ---------------*/
 
 .care_hot{
-    max-width: 1440px;
-    margin: 0 auto;
+    /* max-width: 1440px; */
+    width: 100%;
+    margin: -1px auto;
     background-color: #E1E1CD;
 }
 
@@ -209,8 +213,9 @@
 .care_top1 li>img{
     height: 49px;
     position: absolute;
-    top: -26px;
-    left: -27px;
+    /* top: -26px;
+    left: -27px; */
+    margin: 0 -2px;
 }
 
 .care_top1 li:nth-child(3) img{
@@ -236,7 +241,8 @@
 /*--------------- 分類選單 ---------------*/
 
 .category{
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    width: 100%;
     height: 912px;
     margin: 0 auto;
     background-image: linear-gradient(0deg, #F1F6F5 20% ,#D1D6D5 80%);
@@ -253,11 +259,12 @@
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
+    /* border: 1px solid red; */
 }
 
 .category h3{
-    font-size: 1.25vw;
-    /* font-size: 20px; */
+    /* font-size: 1.25vw; */
+    font-size: 20px;
     color: #686B4C;
     font-weight: bold;
 }
@@ -268,16 +275,18 @@
     width: 29.93%;
     /* height: 307.79px; */
     height: 34%;
-    top: 70px;
-    left: 60px;
+    /* top: 70px; */
+    /* left: 60px; */
+    top: 8%;
+    left: 5%;
 }
 
 .category a:nth-of-type(1) h3{
     transform:rotate(10deg);
-    /* padding-left: 108px; */
-    padding-left: 25%;
-    /* padding-top: 212px; */
-    padding-top: 48%;  
+    padding-left: 108px;
+    /* padding-left: 25%; */
+    padding-top: 212px;
+    /* padding-top: 48%;   */
 }
 
 .category a:hover{
@@ -289,8 +298,10 @@
     background-image: url('../img/HOME/勞鼠.png');
     width: 24.79%;
     height: 13%;
-    top: 316px;
-    left: 600px;
+    /* top: 316px; */
+    /* left: 600px; */
+    top: 35%;
+    left: 42%;
 }
 
 .category a:nth-of-type(2) h3{
@@ -303,8 +314,10 @@
     background-image: url('../img/HOME/飼料袋.png');
     width: 16.25%;
     height: 29%;
-    top: 60px;
-    left: 1100px;
+    /* top: 60px; */
+    /* left: 1100px; */
+    top: 6%;
+    left: 76%;
 }
 
 .category a:nth-of-type(3) h3{
@@ -316,8 +329,10 @@
     background-image: url('../img/HOME/貓抓板.png');
     width: 29.79%;
     height: 16.5%;
-    top: 490px;
-    left: 310px;
+    /* top: 490px; */
+    /* left: 310px; */
+    top: 54%;
+    left: 22%;
 }
 
 .category a:nth-of-type(4) h3{
@@ -329,8 +344,10 @@
     background-image: url('../img/HOME/罐罐.png');
     width: 15.49%;
     height: 20.5%;
-    top: 400px;
-    left: 1030px;
+    /* top: 400px; */
+    /* left: 1030px; */
+    top: 43%;
+    left: 72%;
 }
 
 .category a:nth-of-type(5) h3{
@@ -343,7 +360,8 @@
     background-image: url('../img/HOME/逗貓棒.png');
     width: 17.15%;
     height: 39.5%;
-    top: 440px;
+    /* top: 440px; */
+    top: 47%;
     left: 0;
 }
 
@@ -356,8 +374,10 @@
     background-image: url('../img/HOME/魚.png');
     width: 25.63%;
     height: 13%;
-    top: 728px;
-    left: 560px;
+    /* top: 728px; */
+    /* left: 560px; */
+    top: 80%;
+    left: 39%;
 }
 
 .category a:nth-of-type(7) h3{
@@ -366,15 +386,1359 @@
 }
 
 .category a:nth-of-type(8){
-    background-image: url('../img/HOME/尾巴.png');
-    width: 34.03%;
-    height: 28%;
-    top: 620px;
-    left: 950px;
+    background-image: url(../img/HOME/貓草.png);
+    width: 15%;
+    height: 26%;
+    /* top: 620px; */
+    /* left: 950px; */
+    top: 68%;
+    left: 78%;
 }
 
-.category a:nth-of-type(8) h3{
-    transform:rotate(10deg);
+.category a:nth-of-type(8) h3 {
     padding-left: 32%;
-    padding-top: 20%;
+    padding-top: 79%;
+}
+
+
+
+
+
+/*--------------- RWD ---------------*/
+
+
+
+/* 全斷點 1920 */
+
+@media screen and (max-width: 1920px) {
+
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 21%, #84B2CD 21.1%);
+    }
+
+    .leisure_hot h1{
+        font-size: 68px;
+    }
+
+    .leisure_hot h2{
+        font-size: 28px;
+    }
+
+    .leisure_hot>a {
+        width: 176px;
+        font-size: 24px;
+    }
+    
+    .leisure_top1 li{
+        margin-right: 6%;
+        /* margin-top: 68px; */
+    }
+
+    .leisure_top1 a {
+        width: 320px;
+        height: 400px;
+    }
+
+    .leisure_top1 li>img {
+        height: 56px;
+        /* top: -28px; */
+        /* left: -32px; */
+        margin: -28px -32px;
+    }
+
+    .top1_intro h3 {
+        font-size: 24px;
+    }
+
+    .top1_intro h5 {
+        font-size: 18px;
+        margin: 12px 0 0 20px;
+    }
+
+    .top1_data img {
+        height: 24px;
+    }
+
+    .top1_data h4 {
+        padding-left: 12px;
+        font-size: 20px;
+    }
+
+    /* 寵物照護 HOT */
+
+    .care_hot h1{
+        font-size: 68px;
+    }
+
+    .care_hot h2{
+        font-size: 28px;
+    }
+
+    .care_hot>a {
+        width: 176px;
+        font-size: 24px;
+    }
+    
+    .care_top1 li{
+        margin-right: 6%;
+        /* margin-top: 68px; */
+    }
+
+    .care_top1 a {
+        width: 320px;
+        height: 400px;
+    }
+
+    .care_top1 li>img {
+        height: 56px;
+        /* top: -28px; */
+        /* left: -32px; */
+        margin: -28px -32px;
+    }
+
+    .top1_intro h3 {
+        font-size: 24px;
+    }
+
+    .top1_intro h5 {
+        font-size: 18px;
+        margin: 12px 0 0 20px;
+    }
+
+    .top1_data img {
+        height: 24px;
+    }
+
+    .top1_data h4 {
+        padding-left: 12px;
+        font-size: 20px;
+    }
+
+
+    /* 分類選單 */
+
+    .category h3{
+        font-size: 24px;
+    }
+
+    .category a:nth-of-type(1) {
+        width: 24.93%;
+        height: 37%;
+        top: 8%;
+        left: 5%;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 115px;
+        padding-top: 227px;
+    }
+
+    .category a:nth-of-type(2) {
+        width: 21.79%;
+        height: 15%;
+        top: 33%;
+        left: 37%;
+    }
+
+    .category a:nth-of-type(3) {
+        width: 13.25%;
+        height: 31%;
+        top: 13%;
+        left: 79%;
+    }
+
+    .category a:nth-of-type(4) {
+        width: 25.79%;
+        height: 18.5%;
+        left: 23%;
+        top: 57%;
+    }
+
+    .category a:nth-of-type(5) {
+        width: 13%;
+        height: 22.5%;
+        top: 46%;
+        left: 63%;
+    }
+
+    .category a:nth-of-type(6) {
+        width: 14.15%;
+        height: 43.5%;
+        top: 53%;
+    }
+
+    .category a:nth-of-type(7) {
+        width: 23%;
+        height: 16%;
+        left: 48%;
+        top: 80%;
+    }
+
+    .category a:nth-of-type(8) {
+        width: 13.5%;
+        height: 32%;
+        top: 65%;
+        left: 83%;
+    }
+
+}
+
+
+/* 全斷點 1700 */
+
+@media screen and (max-width: 1700px) {
+
+    .leisure_top1 li {
+        margin-right: 5%;
+    }
+
+    .care_top1 li {
+        margin-right: 5%;
+    }   
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 99px;
+        padding-top: 204px;
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-left: 47%;
+    }
+
+}
+
+
+
+/* 全斷點 1650 */
+
+@media screen and (max-width: 1650px) {
+
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 11%, #84B2CD 11.1%);
+    }
+
+    .leisure_hot h1{
+        font-size: 60px;
+    }
+
+    .leisure_hot h2{
+        font-size: 24px;
+    }
+
+    .leisure_hot>a {
+        width: 158px;
+        font-size: 20px;
+    }
+    
+    .leisure_top1 li{
+        margin-right: 4%;
+    }
+
+    .leisure_top1 a {
+        width: 288px;
+        height: 360px;
+    }
+
+    .leisure_top1 li>img {
+        height: 49px;
+        /* top: -26px; */
+        /* left: -27px; */
+        margin: -24px -28px;
+    }
+
+    .top1_intro h3 {
+        font-size: 20px;
+    }
+
+    .top1_intro h5 {
+        font-size: 18px;
+        margin: 12px 0 0 20px;
+    }
+
+    .top1_data img {
+        height: 20px;
+    }
+
+    .top1_data h4 {
+        padding-left: 8px;
+        font-size: 16px;
+    }
+
+    /* 寵物照護 HOT */
+
+    .care_hot h1{
+        font-size: 60px;
+    }
+
+    .care_hot h2{
+        font-size: 24px;
+    }
+
+    .care_hot>a {
+        width: 158px;
+        font-size: 20px;
+    }
+    
+    .care_top1 li{
+        margin-right: 4%;
+    }
+
+    .care_top1 a {
+        width: 288px;
+        height: 360px;
+    }
+
+    .care_top1 li>img {
+        height: 49px;
+        /* top: -26px;
+        left: -27px; */
+        margin: -24px -28px;
+    }
+
+
+    /* 分類選單 */
+
+    .category h3{
+        font-size: 20px;
+    }
+
+    .category a:nth-of-type(1) {
+        width: 25.93%;
+        height: 34%;
+        top: 8%;
+        left: 5%;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 108px;
+        padding-top: 212px;
+    }
+
+    .category a:nth-of-type(2) {
+        width: 24.79%;
+        height: 13%;
+        top: 33%;
+        left: 42%;
+    }
+
+    .category a:nth-of-type(3) {
+        width: 15.25%;
+        height: 29%;
+        top: 6%;
+        left: 76%;
+    }
+
+    .category a:nth-of-type(4) {
+        width: 27.79%; 
+        height: 16.5%;
+        top: 54%;
+        left: 27%;
+    }
+
+    .category a:nth-of-type(5) {
+        width: 14.49%;
+        height: 20.5%;
+        top: 43%;
+        left: 72%;
+    }
+
+    .category a:nth-of-type(6) {
+        width: 17.15%;
+        height: 39.5%;
+        top: 52%; 
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-top: 100%;
+    }
+
+    .category a:nth-of-type(7) {
+        width: 22.63%;
+        height: 13%;
+        top: 80%;
+        left: 45%;
+    }
+
+    .category a:nth-of-type(8) {
+        width: 13.5%;
+        height: 26%;
+        top: 68%;
+        left: 80%;
+    }
+}
+
+
+
+/* 全斷點 1439 */
+
+@media screen and (max-width: 1439px) {
+
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 9%, #84B2CD 9.1%);
+    }
+
+    .leisure_top1{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .leisure_top1 li {
+        padding: 0 8%;
+        margin: 0 0 88px;
+    }
+
+    .leisure_hot>a {
+        width: 176px;
+        font-size: 24px;
+    }
+
+    .leisure_top1 a {
+        width: 320px;
+        height: 400px;
+    }
+
+    .leisure_top1 li>img {
+        height: 56px;
+        margin: -30px -32px;
+        top: 0;
+    }
+
+    .top1_intro h3 {
+        font-size: 24px;
+    }
+
+    .top1_intro h5 {
+        font-size: 18px;
+        margin: 12px 0 0 20px;
+    }
+
+    .top1_data img {
+        height: 24px;
+    }
+
+    .top1_data h4 {
+        padding-left: 12px;
+        font-size: 20px;
+    }
+
+    /* 寵物照護 HOT */
+    
+    .care_top1{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .care_top1 li {
+        padding: 0 8%;
+        margin: 0 0 88px;
+    }
+
+    .care_hot>a {
+        width: 176px;
+        font-size: 24px;
+    }
+
+    .care_top1 a {
+        width: 320px;
+        height: 400px;
+    }
+
+    .care_top1 li>img {
+        height: 56px;
+        /* top: -26px;
+        left: -27px; */
+        margin: -28px -30px;
+    }
+
+    /* 分類選單 */
+
+    .category a:nth-of-type(1) {
+        height: 30%;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 94px;
+        padding-top: 181px;
+    }
+
+    .category a:nth-of-type(3) {
+        height: 27%;
+    }
+
+    .category a:nth-of-type(4) {
+        height: 15.5%;
+    }
+
+    .category a:nth-of-type(5) {
+        height: 19.5%;
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-top: 109%;
+        padding-left: 51%;
+    }
+
+    .category a:nth-of-type(7) {
+        height: 12%;
+    }
+
+    .category a:nth-of-type(8) {
+        height: 24%;
+    }
+
+    .category a:nth-of-type(8) h3 {
+        padding-left: 30%;
+    }
+}
+
+
+
+/* 全斷點 1280 */
+
+@media screen and (max-width: 1280px) {
+
+    .category {
+        height: 814px;
+    }
+
+    .category a:nth-of-type(1) {
+        /* height: 27%; */
+        height: 230px;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 80px;
+        padding-top: 160px;
+    }
+
+    .category a:nth-of-type(2) {
+        /* height: 11%; */
+        height: 95px;
+    }
+
+    .category a:nth-of-type(3) {
+        /* height: 24%; */
+        height: 206px;
+    }
+
+    .category a:nth-of-type(3) h3 {
+        padding-left: 21%;
+    }
+
+    .category a:nth-of-type(4) {
+        /* height: 13.5%; */
+        height: 115px;
+    }
+
+    .category a:nth-of-type(4) h3 {
+        padding-left: 37%;
+    }
+
+    .category a:nth-of-type(5) {
+        /* height: 17.5%; */
+        height: 146px;
+    }
+
+    .category a:nth-of-type(6) {
+        /* height: 34.5%; */
+        height: 300px;
+    }
+
+    .category a:nth-of-type(7) {
+        /* height: 11%; */
+        height: 91px;
+    }
+
+    .category a:nth-of-type(8) {
+        /* height: 21%; */
+        height: 182px;
+    }
+
+    .category a:nth-of-type(8) h3 {
+        padding-left: 25%;
+    }
+
+}
+
+
+
+/* 全斷點 1100 */
+
+@media screen and (max-width: 1100px) {
+
+    .category {
+        height: 730px;
+    }
+
+    .category h3{
+        font-size: 18px;
+    }
+
+    .category a:nth-of-type(1) {
+        /* height: 23%; */
+        height: 205px;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 71px;
+        padding-top: 140px;
+    }
+
+    .category a:nth-of-type(2) {
+        /* height: 10%; */
+        height: 85px;
+        top: 30%;
+    }
+
+    .category a:nth-of-type(3) {
+        /* height: 21%; */
+        height: 183px;
+    }
+
+    .category a:nth-of-type(3) h3 {
+        padding-left: 21%;
+    }
+
+    .category a:nth-of-type(4) {
+        /* height: 11.5%; */
+        height: 102px;
+        top: 51%;
+    }
+
+    .category a:nth-of-type(4) h3 {
+        padding-left: 37%;
+    }
+
+    .category a:nth-of-type(5) {
+        /* height: 14.5%; */
+        height: 129px;
+        top: 47%;
+    }
+
+    .category a:nth-of-type(6) {
+        /* height: 29.5%; */
+        height: 270px;
+        top: 56%;
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-left: 48%;
+    }
+
+    .category a:nth-of-type(7) {
+        /* height: 9%; */
+        height: 81px;
+        top: 78%;
+        left: 42%;
+    }
+
+    .category a:nth-of-type(8) {
+        /* height: 18%; */
+        height: 162px;
+        top: 72%;
+    }
+
+    .category a:nth-of-type(8) h3 {
+        padding-left: 25%;
+    }
+
+}
+
+
+
+/* 全斷點 1000 */
+
+@media screen and (max-width: 1000px) {
+    
+    .leisure_top1 li {
+        padding: 0 4%;
+    }
+
+    .care_top1 li {
+        padding: 0 4%;
+    }
+
+}
+
+
+/* 全斷點 820 */
+
+@media screen and (max-width: 820px) {
+    
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 11%, #84B2CD 11.1%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leisure_hot h1 {
+        font-size: 54px;
+    }
+
+    .leisure_hot h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .leisure_hot>a {
+        order: 2;
+        width: 140px;
+        margin: -42px 48px 60px auto;
+        font-size: 20px;
+    }
+    
+    .leisure_top1{
+        order: 1;
+    }
+
+    .leisure_hot>img{
+        order: 3;
+    }
+
+    .leisure_hot>a img {
+        width: 32px;
+        padding-left: 28px;
+    }
+    
+    .leisure_top1 li {
+        padding: 0 4%;
+    }
+
+    .leisure_top1 a {
+        width: 288px;
+        height: 360px;
+    }
+
+    .leisure_top1 li>img {
+        height: 49px;
+        margin: -24px -28px;
+    }
+
+    .top1_intro h3 {
+        font-size: 20px;
+    }
+
+    .top1_intro h5 {
+        font-size: 18px;
+        margin: 12px 0 0 20px;
+    }
+
+    .top1_data img {
+        height: 20px;
+    }
+
+    .top1_data h4 {
+        padding-left: 8px;
+        font-size: 16px;
+    }
+
+
+    /* 寵物照護 HOT */
+
+    .care_hot{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .care_hot h1 {
+        font-size: 54px;
+    }
+
+    .care_hot h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .care_hot>a {
+        order: 2;
+        margin: -42px 48px 60px auto;
+        width: 140px;
+        font-size: 20px;
+    }
+
+    .care_top1{
+        order: 1;
+    }
+
+    .care_hot>img{
+        order: 3;
+    }
+
+    .care_hot>a img {
+        width: 32px;
+        padding-left: 28px;
+    }
+    
+    .care_top1 li {
+        padding: 0 4%;
+    }
+
+    .care_top1 a {
+        width: 288px;
+        height: 360px;
+    }
+
+    .care_top1 li>img {
+        height: 49px;
+        margin: -24px -28px;
+    }
+
+
+    /* 分類選單 */
+
+    .category a:nth-of-type(1) {
+        width: 240px;
+        height: 177px;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 48px;
+        padding-top: 115px;
+    }
+
+    .category a:nth-of-type(2) {
+        height: 70px;
+        width: 220px;
+    }
+
+    .category a:nth-of-type(2) h3 {
+        padding-left: 22%;
+        padding-top: 13%;
+        padding-bottom: 8%;
+    }
+
+    .category a:nth-of-type(3) {
+        width: 138px;
+        height: 155px;
+    }
+
+    .category a:nth-of-type(2) h3 {
+        padding-left: 24%;
+        padding-top: 15%;
+    }
+
+    .category a:nth-of-type(4) {
+        height: 90px;
+        width: 260px;
+        top: 54%;
+        left: 29%;
+    }
+
+    .category a:nth-of-type(4) h3 {
+        padding-left: 36%;
+        padding-top: 12%;
+    }
+
+    .category a:nth-of-type(5) {
+        width: 143px;
+        height: 118px;
+        top: 44%;
+    }
+
+    .category a:nth-of-type(5) h3 {
+        padding-left: 23%;
+    }
+
+    .category a:nth-of-type(6) {
+        width: 155px;
+        height: 227px;
+        top: 44%;
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-left: 44%;
+    }
+
+    .category a:nth-of-type(7) {
+        width: 257px;
+        height: 86px;
+        top: 82%;
+        left: 20%;
+    }
+
+    .category a:nth-of-type(8) {
+        width: 132px;
+        height: 148px;
+        top: 72%;
+        left: 77%;
+    }
+
+
+}
+
+
+/* 全斷點 700 */
+
+@media screen and (max-width: 700px) {
+    
+    /* 寵物休閒 HOT */
+
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 3%, #84B2CD 3.1%);
+    }
+
+    .leisure_top1 li>img{
+        margin: -24px -28px;
+    }
+
+    .leisure_top1 a{
+        width: 548px;
+        height: 176px;
+        display: block;
+        float: left;
+    }
+
+    .leisure_top1 a>img{
+        width: 40%;
+        height: 100%;
+        border-radius: 31px 0 0 31px;
+        float: left;
+    }
+    
+    .top1_intro{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .top1_intro h3{
+        font-size: 24px;
+        margin: 24px 0 0 28px;
+    }
+
+    .top1_intro h5{
+        font-size: 20px;
+        margin: 12px 0 0px 28px;
+    }
+
+    .top1_data{
+        margin: 48px 0 0 28px;
+    }
+
+    .top1_data h4{
+        font-size: 20px;
+    }
+
+    .top1_data span {
+        font-size: 12px;
+    }
+
+
+    /* 寵物照護 HOT */
+
+    .care_top1 li>img{
+        margin: -24px -28px;
+    }
+
+    .care_top1 a{
+        width: 548px;
+        height: 176px;
+        display: block;
+        float: left;
+    }
+
+    .care_top1 a>img{
+        width: 40%;
+        height: 100%;
+        border-radius: 31px 0 0 31px;
+        float: left;
+    }
+
+}
+
+
+
+/* 全斷點 635 */
+
+@media screen and (max-width: 635px) {
+    
+    /* 寵物休閒 HOT */
+
+    .leisure_hot{
+        background-image: linear-gradient(357deg, #E1E1CD 3%, #84B2CD 3.1%);
+    }
+
+    .leisure_top1 li {
+        margin: 0 0 72px;
+    }
+
+    .leisure_top1 li>img{
+        margin: -24px -28px;
+    }
+
+    .leisure_top1 a{
+        width: 446px;
+        height: 164px;
+        display: block;
+        float: left;
+    }
+
+    .leisure_top1 a>img{
+        width: 40%;
+        height: 100%;
+        border-radius: 31px 0 0 31px;
+        float: left;
+    }
+    
+    .top1_intro{
+        display: inline-block;
+        width: 240px;
+    }
+
+    .top1_intro h3{
+        font-size: 20px;
+        margin: 24px 0 0 20px;
+    }
+
+    .top1_intro h5{
+        font-size: 16px;
+        margin: 12px 0 0px 20px;
+    }
+
+    .top1_data{
+        margin: 48px 0 0 20px;
+    }
+
+    .top1_data h4{
+        font-size: 20px;
+    }
+
+    .top1_data span {
+        font-size: 12px;
+    }
+
+
+    /* 寵物照護 HOT */
+
+    .care_top1 li {
+        margin: 0 0 72px;
+    }
+
+    .care_top1 li>img{
+        margin: -24px -28px;
+    }
+
+    .care_top1 a{
+        width: 446px;
+        height: 176px;
+        display: block;
+        float: left;
+    }
+
+    .care_top1 a>img{
+        width: 40%;
+        height: 100%;
+        border-radius: 31px 0 0 31px;
+        float: left;
+    }
+
+    /* 分類選單 */
+
+    .category {
+        height: 594px;
+    }
+
+    .category h3 {
+        font-size: 16px;
+    }
+
+    .category a:nth-of-type(1) {
+        width: 200px;
+        height: 148px;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 41px;
+        padding-top: 98px;
+    }
+
+    .category a:nth-of-type(2) {
+        height: 57px;
+        width: 180px;
+        top: 28%;  
+        left: 41%;
+    }
+
+    .category a:nth-of-type(3) {
+        width: 122px;
+        height: 137px;
+        top: 5%;
+        left: 72%;
+    }
+
+    .category a:nth-of-type(3) h3 {
+        padding-left: 16%;
+    }
+
+    .category a:nth-of-type(4) {
+        height: 71px;
+        width: 208px;
+        top: 52%;
+        left: 32%;
+    }
+
+    .category a:nth-of-type(4) h3 {
+        padding-left: 34%;
+    }
+
+    .category a:nth-of-type(5) {
+        width: 123px;
+        height: 102px;
+        top: 44%;
+    }
+
+    .category a:nth-of-type(6) {
+        width: 138px;
+        height: 201px;
+        top: 42%;
+    }
+
+    .category a:nth-of-type(7) {
+        width: 220px;
+        height: 73px;
+        top: 82%;
+        left: 20%;
+    }
+
+    .category a:nth-of-type(8) {
+        width: 106px;
+        height: 119px;
+        top: 71%;
+        left: 70%;
+    }
+
+    .category a:nth-of-type(8) h3 {
+        padding-left: 20%;
+    }
+
+}
+
+
+
+/* 全斷點 500 */
+
+@media screen and (max-width: 500px) {
+    
+    /* 寵物休閒 HOT */
+
+    .leisure_hot {
+        overflow: hidden;
+    }
+
+    .leisure_hot>img {
+        width: 164%;
+    }
+    
+    .leisure_hot h1 {
+        font-size: 44px;
+    }
+
+    .leisure_hot h2 {
+        font-size: 18px;
+    }
+
+    .leisure_hot>a {
+        width: 108px;
+        margin: -32px 36px 40px auto;
+        font-size: 16px;
+    }
+
+    .leisure_hot>a img {
+        width: 24px;
+        padding-left: 16px;
+    }
+
+    .leisure_top1 li {
+        margin: 0px 0 64px 0px;
+    }
+
+    .leisure_top1 li>img {
+        margin: -22px -21px;
+        height: 44px;
+    }
+
+    .leisure_top1 a {
+        width: 360px;
+        height: 164px;
+    }
+
+    .top1_intro {
+        width: 212px;
+    }
+
+    .top1_intro h3 {
+        font-size: 18px;
+        margin: 24px 0 0 12px;
+    }
+
+    .top1_intro h5 {
+        font-size: 16px;
+        margin: 12px 0 0px 12px;
+    }
+
+    .top1_data {
+        margin: 48px 0 0 12px;
+    }
+
+    .top1_data img {
+        height: 16px;
+    }
+
+    .top1_data h4 {
+        font-size: 16px;
+    }
+
+    /* 寵物照護 HOT */
+
+    .care_hot {
+        overflow: hidden;
+    }
+
+    .care_hot>img {
+        margin-left: -80px;
+        width: 150%;
+    }
+
+    .care_hot h1 {
+        font-size: 44px;
+    }
+
+    .care_hot h2 {
+        font-size: 18px;
+    }
+
+    .care_hot>a {
+        width: 108px;
+        margin: -32px 36px 60px auto;
+        font-size: 16px;
+    }
+
+    .care_hot>a img {
+        width: 24px;
+        padding-left: 16px;
+    }
+
+    .care_top1 li {
+        margin: 0px 0 64px 0px;
+    }
+
+    .care_top1 li>img {
+        margin: -22px -21px;
+        height: 44px;
+    }
+
+    .care_top1 a {
+        width: 360px;
+        height: 164px;
+    }
+
+    .care_top1 li:first-child a>img {
+        object-position: left;
+    }
+
+    /* 分類選單 */
+
+    .category {
+        overflow: hidden;
+        height: 700px;
+    }
+
+    .category img {
+        width: 150%;
+        margin-left: -80px;
+    }
+
+    .category a:nth-of-type(1) {
+        width: 200px;
+        height: 148px;
+        top: 8%;
+        left: 5%;
+    }
+
+    .category a:nth-of-type(1) h3 {
+        padding-left: 41px;
+        padding-top: 98px;
+    }
+
+    .category a:nth-of-type(2) {
+        height: 57px;
+        width: 180px;
+        top: 31%;
+        left: 41%;
+    }
+
+    .category a:nth-of-type(2) h3 {
+        padding-left: 24%;
+        padding-top: 15%;
+    }
+
+    .category a:nth-of-type(3) {
+        width: 132px;
+        height: 147px;
+        top: 2%;
+        left: 68%;
+    }
+
+    .category a:nth-of-type(3) h3 {
+        padding-left: 16%;
+    }
+
+    .category a:nth-of-type(4) {
+        height: 79px;
+        width: 231px;
+        top: 47%;
+        left: 45%;
+    }
+
+    .category a:nth-of-type(4) h3 {
+        padding-left: 34%;
+    }
+
+    .category a:nth-of-type(5) {
+        width: 123px;
+        height: 102px;
+        top: 65%;
+        left: 36%;
+    }
+
+    .category a:nth-of-type(5) h3 {
+        padding-left: 23%;
+        padding-top: 47%;
+        padding-bottom: 8%;
+    }
+
+    .category a:nth-of-type(6) {
+        width: 133px;
+        height: 195px;
+        top: 38%;
+    }
+
+    .category a:nth-of-type(6) h3 {
+        padding-left: 44%;
+        padding-top: 109%;
+    }
+
+    .category a:nth-of-type(7) {
+        width: 220px;
+        height: 73px;
+        top: 85%;
+        left: 9%;
+    }
+
+    .category a:nth-of-type(7) h3 {
+        padding-left: 40%;
+        padding-top: 14%;
+    }
+
+    .category a:nth-of-type(8) {
+        width: 124px;
+        height: 139px;
+        top: 73%;
+        left: 70%;
+    }
+
+    .category a:nth-of-type(8) h3 {
+        padding-left: 22%;
+        padding-top: 79%;
+    }
+
 }
