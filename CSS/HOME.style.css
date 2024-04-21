@@ -1758,8 +1758,19 @@
         font-size: 16px;
     }
 
+    .leisure_top1 li>img {
+        margin: -22px 60px;
+        /* margin: -22px -25px; */
+        height: 44px;
+    }
+
+    .leisure_top1 a>img {
+        border-radius: 22px 0 0 22px;
+    }
+
     .leisure_top1 a {
         width: 312px;
+        border-radius: 22px;
     }
 
     .top1_intro {
