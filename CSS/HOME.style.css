@@ -1765,7 +1765,8 @@
     }
 
     .leisure_top1 a>img {
-        border-radius: 22px 0 0 22px;
+        /* border-radius: 22px 0 0 22px; */
+        border-radius: 0;
     }
 
     .leisure_top1 a {
