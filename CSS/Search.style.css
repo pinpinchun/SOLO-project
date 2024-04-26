@@ -209,7 +209,7 @@
 
 .search_bar{
     width: 696px;
-    margin: 64px auto;
+    margin: 40px auto;
     display: flex;
 }
 
@@ -229,9 +229,10 @@
     line-height: 78px;
 }
 
-.search_bar a{
-    display: block;
-    align-content: center;
+.search_bar button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
 }
 
 .search_bar img{
@@ -248,10 +249,11 @@
 .list{
     background-image: url('../img/Search/分類清單\ 底色.png');
     background-repeat: no-repeat;
-    width: 1352px;
+    /* width: 1352px; */
+    width: 80%;
+    height: 480px;
     background-size: contain;
     margin: 0 auto;
-    margin-bottom: 64px;
 }
 
 .list_title{
@@ -263,7 +265,7 @@
     color: #84B2CD;
     font-size: 28px;
     font-weight: bold;
-    padding: 32px 0;
+    padding: 28px 0;
     grid-column-start: 2;
 	grid-column-end: 2;
     text-align: center;
@@ -275,40 +277,55 @@
     background-color: transparent;
     border: transparent;
     padding-left: 42%;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .list_title img{
     padding-left: 8px;
 }
 
-.list ul{
-    width: 1220px;
-    font-size: 0;
-    margin: 0 auto;
+.list ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    justify-content: space-around;
+    padding: 0 3%;
 }
 
-.list li{
-    display: inline-flex;
+.list li {
+    width: 16%;
+    margin-bottom: 32px;
+    padding: 0 3%;
 }
 
-.list li:not(.list li:nth-child(4n+4)){
-    padding-right: 76px;
-    padding-bottom: 60px;
-}
-
-.list a{
+.list li button {
+    outline: none;
+    background-color: transparent;
+    border: transparent;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 0;
     font-weight: bold;
-    color: #333;
-    font-size: 16px;
+    color: #999;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
 }
 
+.list ul img{
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 12px;
+}
 
-.list a>img{
-    width: 248px;
-    padding-bottom: 20px;
+.list span{
+    position: absolute;
+    width: 100%;
+    height: 77%;
+    background-color: #3535357d;
+    border-radius: 12px;
 }
 
 
@@ -358,11 +375,7 @@
 }
 
 .card_zone ul>li{
-    padding-bottom: 88px;
-}
-
-.card_zone ul>li:not(li:nth-child(3n+3)){
-    padding-right: 88px;
+    padding: 0 44px 88px;
 }
 
 .card_zone a{
@@ -623,6 +636,7 @@
 .prev{
     display: flex;
     align-items: center;
+    opacity: 0;
 }
 
 .prev img{
@@ -635,23 +649,24 @@
     font-size: 40px;
 }
 
+.pagination_btn{
+    background-color: #F1F6F5;
+    border-radius: 32px;
+    padding: 8px 28px;
+}
+
 .pagination button{
     font-size: 16px;
     align-content: center;
-    background-color: #F1F6F5;
-    border-radius: 22px;
-    padding: 12px 36px;
+    background: transparent;
     border: transparent;
-}
-
-.pagination span:first-child{
-    padding-right: 54px;
-}
-
-.pagination span:last-child{
-    background-color: #fff;
-    padding: 6px 11px;
+    padding: 6px 12px;
     border-radius: 50%;
+}
+
+.pagination_btn button:first-child{
+    margin-right: 54px;
+    background-color: #fff;
 }
 
 .next{

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href='./CSS/Search.style.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
 
@@ -45,7 +47,7 @@
 
     <div class="search_bar">
         <input type="text" placeholder="探索呼嚕好店，搜尋地區 / 活動 / 店家" name="search">
-        <a href="#"><img src='./img/Search/search.svg' alt=""></a>
+        <button><img src='./img/Search/search.svg' alt=""></button>
     </div>
 
 
@@ -54,17 +56,17 @@
     <div class="list">
         <div class="list_title">
             <h1>分類清單</h1>
-            <button>清除所有搜尋條件<img src='./img/Search/clear.svg' alt=""></button>
+            <button class="list_clear">清除所有搜尋條件<img src='./img/Search/clear.svg' alt=""></button>
         </div>
-        <ul>
-            <li><a href=""><img src='./img/Search/寵物美容.png' alt="">寵物美容</a></li>
-            <li><a href=""><img src='./img/Search/寵物友善餐廳.png' alt="">寵物友善餐廳</a></li>
-            <li><a href=""><img src='./img/Search/寵物旅館.png' alt="">寵物旅館</a></li>
-            <li><a href=""><img src='./img/Search/寵物訓練.png' alt="">寵物訓練</a></li>
-            <li><a href=""><img src='./img/Search/寵物攝影.png' alt="">寵物攝影</a></li>
-            <li><a href=""><img src='./img/Search/寵物烘焙.png' alt="">寵物烘焙</a></li>
-            <li><a href=""><img src='./img/Search/寵物診所.png' alt="">寵物診所</a></li>
-            <li><a href=""><img src='./img/Search/寵物保險.png' alt="">寵物保險</a></li>
+        <ul class="list_btn">
+            <li><button><span></span><img src='./img/Search/寵物美容.png' alt="">寵物美容</button></li>
+            <li><button><span></span><img src='./img/Search/寵物友善餐廳.png' alt="">寵物餐廳</button></li>
+            <li><button><span></span><img src='./img/Search/寵物旅館.png' alt="">寵物旅館</button></li>
+            <li><button><span></span><img src='./img/Search/寵物訓練.png' alt="">寵物訓練</button></li>
+            <li><button><span></span><img src='./img/Search/寵物攝影.png' alt="">寵物攝影</button></li>
+            <li><button><span></span><img src='./img/Search/寵物烘焙.png' alt="">寵物烘焙</button></li>
+            <li><button><span></span><img src='./img/Search/寵物診所.png' alt="">寵物診所</button></li>
+            <li><button><span></span><img src='./img/Search/寵物保險.png' alt="">寵物保險</button></li>
         </ul>
     </div>
 
@@ -92,7 +94,7 @@
     <!-- 卡片 -->
     <div class="card_zone">
         <ul>
-            <li>
+            <li data-item="奧利奧吃吧OreoChiba">
                 <a href="product.html">
                     <div class="card_img">
                         <div class="card_locat">
@@ -127,7 +129,7 @@
                 </a>
             </li>
 
-            <li>
+            <li data-item="Maocha貓咖">
                 <a href="product.html">
                     <div class="card_img2">
                         <div class="card_locat">
@@ -161,7 +163,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="當尼是個星球寵物攝影">
                 <a href="product.html">
                     <div class="card_img3">
                         <div class="card_locat">
@@ -195,7 +198,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="PetSalon薇莎미용실">
                 <a href="product.html">
                     <div class="card_img4">
                         <div class="card_locat">
@@ -229,7 +233,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="小貓貓動物醫院neeeeko">
                 <a href="product.html">
                     <div class="card_img5">
                         <div class="card_locat">
@@ -263,7 +268,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="Hotel.meow">
                 <a href="product.html">
                     <div class="card_img6">
                         <div class="card_locat">
@@ -297,7 +303,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="貓研室－正向教養中心">
                 <a href="product.html">
                     <div class="card_img7">
                         <div class="card_locat">
@@ -331,7 +338,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="富賓產險「咪咪貓貓」">
                 <a href="product.html">
                     <div class="card_img8">
                         <div class="card_locat">
@@ -365,7 +373,8 @@
                     <img src='./img/Search/heart.svg' alt="">
                 </a>
             </li>
-            <li>
+            
+            <li data-item="小胡椒Ms.Pepper">
                 <a href="product.html">
                     <div class="card_img9">
                         <div class="card_locat">
@@ -412,7 +421,10 @@
             <h1>PREV</h1>
         </div>
 
-        <button><span>1</span><span>2</span></button>
+        <div class="pagination_btn">
+            <button>1</button>
+            <button>2</button>
+        </div>
 
         <div class="next">
             <h1>NEXT</h1>
@@ -430,6 +442,33 @@
             <p>聯絡我們</p>
         </a>
     </div>
+
+    <script src="index.js"></script>
+
+    <!-- <script>
+        $(`.search_bar input`).on('input',function(){
+            search()
+        })
+
+        function search(){
+            let searchVal = $(`.search_bar input`).val()
+
+            // console.log(searchVal)
+
+            $(`.card_zone li`).each(function(){
+
+                let card = $(this).attr('data-item')
+
+                if(card.indexOf(searchVal) != -1){
+                    $(this).show()
+                }else{
+                    $(this).hide()
+                }
+
+            })
+        }
+        
+    </script> -->
 
 </body>
 </html>
