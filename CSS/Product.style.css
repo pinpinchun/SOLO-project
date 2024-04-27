@@ -1412,10 +1412,6 @@
         padding: 72px 0;
     }
 
-    .mazewall_m:not(.mazewall_m :last-child){
-        z-index: 5;
-    }
-
     .swiper-pagination-bullet-active {
         background: #4a3c21;
     }
@@ -1427,7 +1423,7 @@
         font-size: 32px;
         padding: 8px 28px;
         margin: 28px 0 32px 32px;
-        background-color: #9d2a2a;
+        background-color: #fff;
         display: inline-flex;
     }
 
@@ -2463,6 +2459,7 @@
         font-size: 20px;
         padding: 8px 28px;
         margin: 24px 0 24px 20px;
+        background-color: #fff;
         display: inline-flex;
     }
 
