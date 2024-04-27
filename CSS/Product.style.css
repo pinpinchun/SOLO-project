@@ -161,12 +161,14 @@
     background-image: url('../img/Product/mazewall\(left\).png');
     /* width: 666px; */
     width: 35.12%;
+    z-index: 5;
 }
 
 .mazewall>li:nth-child(2){
     background-image: url('../img/Product/mazewall\(mid\).png');
     /* width: 562px; */
     width: 29.65%;
+    z-index: 5;
 }
 
 .mazewall>li:nth-child(3){
@@ -312,7 +314,6 @@
     height: 200px;
     margin-left: 40px;
     margin-bottom: 32px;
-    z-index: 0;
 }
 
 .shop_location ul{
