@@ -465,7 +465,22 @@
     .main_nav>li>a{
         width: 230px;
         font-size: 24px;
+        transition: none;
     }
+
+    /* .main_nav>li>a{
+        --height: 60px;
+        --progress: 0px;
+        color: transparent;
+        display: block;
+        font-size: 24px;
+        line-height: var(--height);
+        overflow: hidden;
+        text-shadow: 0 calc(var(--progress) * -1) #84B2CD,
+          0 calc(var(--height) - var(--progress)) #84B2CD;
+        text-transform: uppercase;
+        transition: 0.2s;
+    } */
 
     .main_nav>li:last-child a {
         width: 140px;
@@ -531,10 +546,6 @@
 
     .contact p{
         font-size: 16px;
-    }
-
-    .main_nav a:not(li:last-child a):hover{
-        display: unset;
     }
 }
 

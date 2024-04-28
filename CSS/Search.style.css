@@ -32,7 +32,7 @@
     height: 60px;
     background-color: #F1F6F5;
     border-radius: 32px;
-    padding-left: 24px;
+    padding-left: 36px;
 }
 
 .main_nav>li{
@@ -61,12 +61,6 @@
     --progress: var(--height);
 }
 
-.main_nav>li:nth-child(3)>a:after{
-    padding-left: 8px;
-    content: url('../img/Header/展開.svg');
-    vertical-align: middle;
-}
-
 .main_nav>li:last-child a{
     background-color: #84B2CD;
     color: #FFFFFF;
@@ -81,48 +75,6 @@
 
 .main_nav>li:last-child:hover a{
     font-weight: bold;
-}
-
-.expend_nav>a{
-    position: relative;
-}
-
-/* header 子選單 */
-
-.sub_nav{
-    background-color: #F1F6F5;
-    border-radius: 9px;
-    width: 120px;
-    height: 110px;
-    position: absolute;
-    z-index: 1;
-    display: none;
-}
-
-.sub_nav li{
-    height: 55px;
-}
-
-.sub_nav a{
-    display: block;
-    color: #84B2CD;
-    font-size: 20px;
-}
-
-.sub_nav a:hover{
-    font-weight: bold;
-}
-
-.sub_nav li:first-child a{
-    padding: 20px 20px 15px;
-}
-
-.sub_nav li:last-child a{
-    padding: 16px 20px 20px;
-}
-
-.expend_nav:hover ol{
-    display: block;
 }
 
 /* header 收藏與評論功能 */

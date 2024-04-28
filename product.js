@@ -37,6 +37,17 @@ function falling(){
 
     },10000)
 
+    setTimeout(function(){
+
+        let nowHeight = document.body.scrollHeight;
+    
+        scrollTo({
+            top: nowHeight * 0.6,
+            behavior: 'smooth'
+        })
+        
+    },3500)
+
 }
 
 
@@ -130,17 +141,5 @@ $(document).ready(function(){
         $('.window_comment').fadeIn().show()
         $('.write_comment').slideDown().show()
     })
-
-
-
-    // $(".shop_intro button").click(function() {
-    //     // 獲取檔案高度
-    //     var originalHeight = $(document).height();
-        
-    //     // 跳轉到頁面高度為原始高度的兩倍
-    //     $("html, body").animate({scrollTop: originalHeight * 2}, "slow");
-    // });
-
-
 
 })
