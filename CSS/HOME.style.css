@@ -1820,6 +1820,10 @@
 
 @media screen and (max-width: 400px) {
 
+    .load_animate{
+        width: 45%;
+    }
+
     /* 寵物休閒 HOT */
 
     .leisure_hot h1 {
