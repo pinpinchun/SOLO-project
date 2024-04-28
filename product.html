@@ -40,12 +40,12 @@
                 </ol>
             </li>
             
-            <li><a href="sign_inup.html">登入 / 註冊</a></li>
+            <li><a href="signin.html">登入 / 註冊</a></li>
         </ul>
 
-        <a href="sign_inup.html" class="keep"><img src='./img/Header/收藏.svg' alt=""></a>
+        <a href="signin.html" class="keep"><img src='./img/Header/收藏.svg' alt=""></a>
         
-        <a href="sign_inup.html" class="comment_icon"><img src='./img/Header/評論.svg' alt=""></a>
+        <a href="signin.html" class="comment_icon"><img src='./img/Header/評論.svg' alt=""></a>
     </div>
     
 
@@ -183,14 +183,14 @@
             <div class="func_img_func">
 
                 <ul class="guest_function">
-                    <li>
+                    <!-- <li>
                         <button>
                             <img src='./img/Product/like.svg' alt="">
                             <h3>喜歡</h3>
                         </button>
-                    </li>
+                    </li> -->
                     <li>
-                        <button>
+                        <button id="keep">
                             <img src='./img/Product/keep.svg' alt="">
                             <h3>收藏</h3>
                         </button>
@@ -206,7 +206,7 @@
                 <img src='./img/Product/Shop photo.png' alt="">
 
                 <ul class="product_function">
-                    <li>
+                    <!-- <li>
                         <button>
                             <img src='./img/Product/experience.svg' alt="">
                             <h3>體驗過</h3>
@@ -217,9 +217,15 @@
                             <img src='./img/Product/recommend.svg' alt="">
                             <h3>生火</h3>
                         </button>
+                    </li> -->
+                    <li>
+                        <button id="like">
+                            <img src='./img/Product/like.svg' alt="">
+                            <h3>喜歡</h3>
+                        </button>
                     </li>
                     <li>
-                        <button>
+                        <button id="comment">
                             <img src='./img/Product/comment.svg' alt="">
                             <h3>評論</h3>
                         </button>
@@ -233,6 +239,15 @@
         <!-- product intro -->
         
         <div class="mazewall_bg">
+
+            <img src='./img/Product/fog1.png' alt="" id="fog1">
+            <img src='./img/Product/fog2.png' alt="" id="fog2">
+            <img src='./img/Product/fog3.png' alt="" id="fog3">
+            <img src='./img/Product/fog4.png' alt="" id="fog4">
+            <img src='./img/Product/fog5.png' alt="" id="fog5">
+            <img src='./img/Product/fog6.png' alt="" id="fog6">
+            <img src='./img/Product/fog7.png' alt="" id="fog7">
+            <img src='./img/Product/fog8.png' alt="" id="fog8">
 
             <ul class="mazewall">
                 <li>
@@ -268,7 +283,7 @@
                 </li>
 
 
-                <li>
+                <li class="falling_wall">
                     <div class="shop_intro">
                         <h1>店家簡介</h1>
                         <p>歡迎來到「奧利奧吃吧 • 寵物鮮食製造商」！<br><br>奧利奧吃吧是一家專注於製作新鮮、美味的寵物烘焙點心的製造商。我們以高品質、天然食材為基礎，精心研發出各種寵物喜愛的口味和款式。<br><br>透過嚴格的製作工藝和獨特的配方，希望讓每一隻毛孩都能享受到營養豐富的美食饗宴。</p>
@@ -627,7 +642,25 @@
         });
     </script>
 
-    <script src="index.js"></script>
+    <script>
+
+        function doFirst(){
+            document.querySelector(`.main_search input`).addEventListener('keydown',enter); 
+        }
+
+        function enter(e){
+            if(e.keyCode === 13){
+                document.querySelector(`.main_search a`).click();
+            }
+        };
+
+        window.addEventListener(`load`,doFirst);
+
+    </script>
+
+    <script src="product.js"></script>
+
+
 
 </body>
 </html>

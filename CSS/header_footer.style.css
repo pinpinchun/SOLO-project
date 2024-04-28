@@ -59,8 +59,8 @@
     border: transparent;
     outline: none;
     line-height: 60px;
-    width: 210px;
-    /* width: 66%; */
+    /* width: 210px; */
+    width: 80%;
     padding: 0;
 }
 
@@ -78,6 +78,7 @@
     padding-left: 1.7%;
     flex-grow: 1;
     /* align-items: center; */
+    z-index: 5;
 }
 
 .main_nav>li{
@@ -457,7 +458,8 @@
     }
 
     .main_nav>li:last-child{
-        margin: 12px auto 20px;
+        /* margin: 12px auto 20px; */
+        margin: 12px 32px 20px;
     }
 
     .main_nav>li>a{

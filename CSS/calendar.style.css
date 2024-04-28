@@ -248,12 +248,14 @@
 
 .campaign_zone ul{
     display: inline-flex;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: scroll;
     margin: 60px 0;
 }
 
 .campaign_zone li{
     margin-right: 60px;
+    margin-bottom: 20px;
 }
 
 .campaign_time{

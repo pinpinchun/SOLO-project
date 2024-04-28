@@ -39,12 +39,12 @@
                 </ol>
             </li>
             
-            <li><a href="sign_inup.html">個人主頁</a></li>
+            <li><a href="member_footprint.html">個人主頁</a></li>
         </ul>
 
-        <a href="sign_inup.html" class="keep"><img src='./img/Header/收藏.svg' alt=""></a>
+        <a href="member_keep.html" class="keep"><img src='./img/Header/收藏.svg' alt=""></a>
         
-        <a href="sign_inup.html" class="comment_icon"><img src='./img/Header/評論.svg' alt=""></a>
+        <a href="member_comment.html" class="comment_icon"><img src='./img/Header/評論.svg' alt=""></a>
     </div>
 
 
@@ -120,7 +120,29 @@
         </a>
     </div>
 
-    <script src="index.js"></script>
+    <script>
+
+        function doFirst(){
+            document.querySelector(`.main_search input`).addEventListener('keydown',enterA); 
+        }
+
+        function enterA(e){
+            if(e.keyCode === 13){
+                document.querySelector(`.main_search a`).click();
+            }
+        };
+
+        window.addEventListener(`load`,doFirst);
+
+        $(document).ready(function(){
+
+            $('.hamburger').click(function(){
+                $('.main_nav').slideToggle()
+            })
+
+        })
+
+    </script>
 
 </body>
 </html>

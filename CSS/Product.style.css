@@ -33,7 +33,7 @@
     text-align: center;
     filter:drop-shadow(4px 4px 4px rgba(95, 56, 39, 25%));
     position: relative;
-    z-index: 2;
+    z-index: 12;
 }
 
 .product_title h1{
@@ -70,6 +70,12 @@
     margin-bottom: 40px;
 }
 
+.keep_clicked{
+    background-image: url('../img/Product/keep\(clicked\).svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .guest_function img{
     padding-bottom: 12px;
 }
@@ -96,6 +102,13 @@
     border: transparent;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
+}
+
+.like_clicked{
+    background-image: url('../img/Product/like_clicked.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .product_function li:not(li:last-child){
@@ -106,7 +119,7 @@
     padding-bottom: 12px;
 }
 
-.product_function li:nth-child(1) img:hover{
+/* .product_function li:nth-child(1) img:hover{
     background-image: url('../img/Product/experience_clicked.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -116,7 +129,7 @@
     background-image: url('../img/Product/recommend_clicked.svg');
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 
 .product_function h3{
     color: #84B2CD;
@@ -136,20 +149,362 @@
 /*--------------- Product intro ---------------*/
 
 
-/* 迷宮牆 */
-
 .mazewall_bg{
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 52px;
+    position: relative;
+    overflow: hidden;
 }
+
+.mazewall_bg>img{
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+
+.mazewall_bg>img:nth-child(1){
+    /* width: 30%; */
+    width: 50%;
+    top: 9%;
+    left: -5%;
+    transform: scale(0.3);
+    transform-origin: right;
+}
+
+.fog1{
+    animation: fog_L1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_L1{
+    0%{
+        opacity: 0;
+        top: 9%;
+        left: -5%;
+        transform: scale(0.3);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 9%;
+        left: -5%;
+        transform: scale(0.3);
+    }
+
+    20%{
+        opacity: 1;
+        top: 9%;
+        left: -5%;
+        transform: scale(0.3);
+    }
+
+    100%{
+        opacity: 0;
+        top: 3%;
+        left: -15%;
+        transform: scale(0.8);
+    }
+}
+
+.mazewall_bg>img:nth-child(2){
+    /* width: 36%; */
+    width: 58%;
+    top: 19%;
+    left: -20%;
+}
+
+.fog2{
+    animation: fog_L2 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_L2{
+    0%{
+        opacity: 0;
+        top: 19%;
+        left: -20%;
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 19%;
+        left: -20%;
+    }
+
+    20%{
+        opacity: 1;
+        top: 19%;
+        left: -20%;
+    }
+
+    100%{
+        opacity: 0;
+        top: 19%;
+        left: -30%;
+    }
+}
+
+
+.mazewall_bg>img:nth-child(3){
+    /* width: 20%; */
+    width: 40%;
+    top: 25%;
+    left: 1%;
+    transform: scaleX(0.3);
+    transform-origin: right;
+}
+
+.fog3{
+    /* animation: fog_L 10s 2s cubic-bezier(0.22, 1, 0.36, 1) forwards; */
+    animation: fog_L 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_L{
+    0%{
+        opacity: 0;
+        top: 25%;
+        left: 1%;
+        transform: scaleX(0.3);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 25%;
+        left: 1%;
+        transform: scaleX(0.3);
+    }
+
+    20%{
+        opacity: 1;
+        top: 25%;
+        left: 1%;
+        transform: scaleX(0.3);
+    }
+
+    100%{
+        opacity: 0;
+        top: 23%;
+        left: 0%;
+        transform: scaleX(1);
+    }
+}
+
+.mazewall_bg>img:nth-child(4){
+    /* width: 40%; */
+    width: 90%;
+    top: 30%;
+    left: 6%;
+}
+
+.fog4{
+    animation: fog_cen 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_cen{
+    0%{
+        opacity: 0;
+        top: 30%;
+        left: 6%;
+        transform: scale(0.1);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 21%;
+        right: 16%;
+        transform: scale(0.1);
+    }
+
+    20%{
+        opacity: 1;
+        top: 30%;
+        left: 6%;
+        transform: scale(0.1);
+    }
+
+    100%{
+        opacity: 0;
+        top: 30%;
+        left: 6%;
+        transform: scale(2);
+    }
+}
+
+.mazewall_bg>img:nth-child(5){
+    /* width: 30%; */
+    width: 50%;
+    top: 18%;
+    right: 0%;
+}
+
+.fog5{
+    animation: fog_R2 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_R2{
+    0%{
+        opacity: 0;
+        top: 18%;
+        right: 0%;
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 18%;
+        right: 0%;
+    }
+
+    20%{
+        opacity: 1;
+        top: 18%;
+        right: 0%;
+    }
+
+    100%{
+        opacity: 0;
+        top: 18%;
+        right: -20%;
+    }
+}
+
+.mazewall_bg>img:nth-child(6){
+    /* width: 20%; */
+    width: 40%;
+    top: 10%;
+    right: 5%;
+    transform: scale(0.3);
+    transform-origin: left;
+}
+
+.fog6{
+    animation: fog_R1 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_R1{
+    0%{
+        opacity: 0;
+        top: 10%;
+        right: 5%;
+        transform: scale(0.3);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 10%;
+        right: 5%;
+        transform: scale(0.3);
+    }
+
+    20%{
+        opacity: 1;
+        top: 10%;
+        right: 5%;
+        transform: scale(0.3);
+    }
+
+    100%{
+        opacity: 0;
+        top: 0%;
+        right: -10%;
+        transform: scale(0.8);
+    }
+}
+
+.mazewall_bg>img:nth-child(7){
+    /* width: 20%; */
+    width: 40%;
+    top: 24%;
+    right: 0;
+    transform-origin: left;
+}
+
+.fog7{
+    animation: fog_R3 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_R3{
+    0%{
+        opacity: 0;
+        top: 24%;
+        right: 0;
+        transform: scale(0.3);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 24%;
+        right: 0;
+        transform: scale(0.3);
+    }
+
+    20%{
+        opacity: 1;
+        top: 24%;
+        right: 0;
+        transform: scale(0.3);
+    }
+
+    100%{
+        opacity: 0;
+        top: 15%;
+        right: -20%;
+        transform: scale(0.8);
+    }
+}
+
+
+
+.mazewall_bg>img:nth-child(8){
+    width: 26%;
+    top: 21%;
+    right: 16%;
+    transform: scaleX(0.3);
+    transform-origin: left;
+}
+
+.fog8{
+    animation: fog_R 10s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fog_R{
+    0%{
+        opacity: 0;
+        top: 21%;
+        right: 16%;
+        transform: scaleX(0.3);
+    }
+
+    19.5%{
+        opacity: 0;
+        top: 21%;
+        right: 16%;
+        transform: scaleX(0.3);
+    }
+
+    20%{
+        opacity: 1;
+        top: 21%;
+        right: 16%;
+        transform: scaleX(0.3);
+    }
+
+    100%{
+        opacity: 0;
+        top: 19%;
+        right: 3%;
+        transform: scaleX(1);
+    }
+}
+
+
+/* 迷宮牆 */
+
 
 .mazewall{
     height: 778px;
     width: 100%;
     display: inline-flex;
-
+    perspective: 500px;
 }
 
 .mazewall>li{
@@ -167,6 +522,38 @@
     background-image: url('../img/Product/mazewall\(mid\).png');
     /* width: 562px; */
     width: 29.65%;
+    /* perspective: 500px;
+    transform-origin: bottom;
+    animation: easeOutBounce 3s linear forwards; */
+}
+
+.fallingWall{
+    perspective: 500px;
+    transform-origin: bottom;
+    animation: easeOutBounce 3s linear forwards;
+}
+
+@keyframes easeOutBounce {
+	0% {
+		transform: rotate3d(1, 0, 0, 0deg);
+	}
+
+	64% {
+		transform: rotate3d(1, 0, 0, 88deg);
+	}
+
+	82% {
+		transform: rotate3d(1, 0, 0, 85deg);
+	}
+
+	92% {
+		transform: rotate3d(1, 0, 0, 89.7deg);
+	}
+
+	100% {
+		transform: rotate3d(1, 0, 0, 90deg);
+	}
+
 }
 
 .mazewall>li:nth-child(3){
@@ -290,6 +677,8 @@
     font-size: 24px;
     display: block;
     margin: 40px auto 24px auto;
+    cursor: pointer;
+    z-index: 20;
 }
 
 
@@ -553,6 +942,7 @@
     padding: 0;
     border-radius: 8px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .filter_all button{
@@ -590,7 +980,7 @@
 }
 
 .filter_star:hover ol{
-    display: block;
+    /* display: block; */
     /* position: fixed; */
 }
 
@@ -751,6 +1141,7 @@
     color: #fff;
     display: block;
     margin: 9% auto 0 auto;
+    cursor: pointer;
 }
 
 
@@ -765,7 +1156,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 11;
 
     display: none;
 }
@@ -779,7 +1170,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 3;
+    z-index: 15;
     border: 3px solid #A59683;
     
     display: none;
@@ -928,7 +1319,6 @@
     border-radius: 9px;
     width: 124px;
     height: 124px;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     margin-right: 16px;
@@ -941,6 +1331,7 @@
 .share_photo img{
     width: 12px;
     padding: 56px;
+    cursor: pointer;
 }
 
 
@@ -951,6 +1342,7 @@
     vertical-align: top;
     margin-left: 24px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .comment_btn{
@@ -967,6 +1359,7 @@
     padding: 8px 32px;
     border-radius: 9px;
     color: #fff;
+    cursor: pointer;
 }
 
 .comment_btn button:first-child{
@@ -2167,6 +2560,7 @@
     .all_comment button {
         font-size: 18px;
         margin: 22% auto 0 auto;
+
     }
 }
 

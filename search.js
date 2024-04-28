@@ -1,24 +1,19 @@
 function doFirst(){
-    
-    // search 頁面
-    document.querySelector(`.search_bar input`).addEventListener('keydown',enter)
+
+    document.querySelector(`.search_bar input`).addEventListener('keydown',enter);
 
 }
-
-
-// -------------------- search 頁面 -----------------------
 
 
 // JS
 
 // 點擊 enter 搜尋商品
-function enter(e){
 
+function enter(e){
     if(e.keyCode === 13){          // Enter 的按鍵碼是 13
         document.querySelector(`.search_bar button`).click()
     }
-
-}
+};
 
 window.addEventListener(`load`,doFirst);
 

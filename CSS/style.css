@@ -388,7 +388,8 @@
 }
 
 .member > img{
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     display: block;
     margin: 0 auto;
     margin-top: -1px;
