@@ -532,6 +532,10 @@
     .contact p{
         font-size: 16px;
     }
+
+    .main_nav a:not(li:last-child a):hover{
+        display: unset;
+    }
 }
 
 

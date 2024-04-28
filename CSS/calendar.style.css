@@ -203,6 +203,7 @@
 .date_picker button{
     border: transparent;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .date_picker img{
@@ -218,7 +219,7 @@
 /*--------------- campaign 區塊 ---------------*/
 
 .campaign_zone{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     display: flex;
     background-color: #F0F0E6;
     margin: 0 auto;
@@ -233,6 +234,7 @@
 .campaign_btn button{
     border: transparent;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .campaign_btn button:first-child{
@@ -332,6 +334,7 @@
 }
 
 .campaign_info p{
+    width: 407px;
     color: #333;
     font-size: 16px;
     margin-bottom: 24px;
@@ -351,6 +354,7 @@
 .campaign_more h2{
     margin-right: 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .campaign_more img{
